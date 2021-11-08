@@ -16,3 +16,12 @@ document.getElementById('list-3').addEventListener('mouseover',function () {
 document.getElementById('list-3').addEventListener('mouseout', function () {
    document.getElementById('line-3').classList.add('hidden');
 });
+
+document.getElementById('menu-icon').addEventListener('click', function () {
+   document.getElementById('open-menu').classList.remove('hidden');
+   document.getElementById('menu-list').classList.remove('hidden');
+});
+document.getElementById('close-menu').addEventListener('click', function () {
+   document.getElementById('open-menu').classList.add('hidden');
+   document.getElementById('menu-list').classList.add('hidden');
+});

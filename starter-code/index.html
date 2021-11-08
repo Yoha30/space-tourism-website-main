@@ -10,8 +10,8 @@
   <title>Frontend Mentor | Space tourism website</title>
 </head>
 <body class="bg-home-sm sm:bg-home bg-no-repeat bg-cover	 text-white text-xl">
-<div class="p-16">
-  <nav class="flex justify-between flex-row  ">
+<div class=" p-8 sm:p-16">
+  <nav class=" flex justify-between flex-row place-items-center">
     <div>
    <a href="#"> <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48">
       <g fill="none" fill-rule="evenodd">
@@ -20,11 +20,41 @@
       </g>
     </svg></a>
     </div>
-    <hr class="w-[40rem] left-52 top-[5.5rem] z-20 opacity-20 absolute">
-  <div class="backdrop-blur-xl hidden md:block absolute right-0 top-10	h-24 w-[70rem] "> </div>
-    <ul class=" hidden sm:flex place-items-center tracking-widest z-10 pr-20">
+    <hr class="w-[40rem] hidden sm:block left-52 top-[5.5rem] z-20 opacity-20 absolute">
+      <div class="block sm:hidden cursor-pointer" id="menu-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="21">
+              <g fill="#D0D6F9" fill-rule="evenodd">
+                  <path d="M0 0h24v3H0zM0 9h24v3H0zM0 18h24v3H0z"/>
+              </g>
+          </svg>
+      </div>
+  <div class="backdrop-blur-xl hidden md:block absolute right-0 top-0 sm:top-10	h-full sm:h-24 w-72 sm:w-[70rem] " id="open-menu">
+      <ul class=" mt-28 ml-10  flex-col sm:flex-row hidden  place-content-start sm:place-items-center tracking-widest z-10 pr-0 sm:pr-20" id="menu-list">
+          <li class="cursor-pointer "><a href="index.html"> 00 Home</a>
+              <hr class="w-full relative hidden sm:block top-8">
+          </li>
+          <li class=" py-8 cursor-pointer"><a href="destination-moon.html"> 01 Destination </a>
+              <hr class="w-full relative  hidden top-8 ">
+          </li>
+          <li class="cursor-pointer " ><a href="crew-commander.html.html">02 Crew</a>
+              <hr class="w-full relative  top-8 hidden">
+          </li>
+          <li class="py-8 cursor-pointer "><a href="technology-vehicle.html"> 03 Technology</a>
+              <hr class="w-full relative hidden  top-8 ">
+          </li>
+      </ul>
+      <div id="close-menu" class="absolute right-8 cursor-pointer top-10 block sm:hidden opacity-50">
+          <svg class="" xmlns="http://www.w3.org/2000/svg" width="20" height="21">
+              <g fill="#D0D6F9" fill-rule="evenodd">
+                  <path d="M2.575.954l16.97 16.97-2.12 2.122L.455 3.076z"/>
+                  <path d="M.454 17.925L17.424.955l2.122 2.12-16.97 16.97z"/>
+              </g>
+          </svg></div>
+  </div>
+
+    <ul class=" hidden sm:flex flex-col sm:flex-row   place-content-start sm:place-items-center tracking-widest z-10 pr-0 sm:pr-20">
  <li class="cursor-pointer "><a href="index.html"> 00 Home</a>
-     <hr class="w-full relative   top-8">
+     <hr class="w-full relative hidden sm:block top-8">
  </li>
  <li class="px-20 cursor-pointer" id="list"><a href="destination-moon.html"> 01 Destination </a>
      <hr class="w-full relative  hidden top-8 " id="line">
@@ -32,24 +62,23 @@
       <li class="cursor-pointer " id="list-2"><a href="crew-commander.html.html">02 Crew</a>
           <hr class="w-full relative  top-8 hidden" id="line-2">
       </li>
- <li class="px-20 cursor-pointer " id="list-3"><a href="technology-vehicle.html"> 03 Technology</a>
+ <li class=" px-20 cursor-pointer " id="list-3"><a href="technology-vehicle.html"> 03 Technology</a>
  <hr class="w-full relative hidden  top-8 " id="line-3">
  </li>
     </ul>
   </nav>
-<div class="absolute  bottom-40 left-52 ">
-    <p class=" tracking-large uppercase  text-baby-blue"> So, you want to travel to</p>
-  <h1 class="text-9xl tracking-widest my-12  uppercase">Space</h1>
- <p class=" w-[32rem] text-baby-blue"  > Let’s face it; if you want to go to space, you might as well genuinely go to
+<div class="static sm:absolute  bottom-40  left-0 sm:left-52 ">
+    <p class=" tracking-widest sm:tracking-large text-sm sm:text-base pl-14 sm:pl-0 pt-10 sm:pt-0 uppercase  text-baby-blue"> So, you want to travel to</p>
+  <h1 class=" text-7xl sm:text-9xl tracking-widest my-5 sm:my-12 pl-14 sm:pl-0  uppercase">Space</h1>
+ <p class=" w-[20rem] sm:w-[32rem] text-baby-blue leading-6 sm:leading-normal text-xs sm:text-sm text-center sm:text-left"  > Let’s face it; if you want to go to space, you might as well genuinely go to
   outer space and not hover kind of on the edge of it. Well sit back, and relax
   because we’ll give you a truly out of this world experience!</p>
 </div>
-  <div class="absolute  bottom-52 left-[63rem] ">
-  <div class="bg-white left-96 hover:ring-10 hover:ring-white hover:ring-opacity-10  rounded-full cursor-pointer w-72 h-72 relative">
-  <p class="text-black  absolute right-16   text-4xl top-[7.5rem] tracking-widest uppercase ">Explore </p>
+  <div class=" static sm:absolute  bottom-52 left-[63rem] mt-16 sm:mt-0 ml-20 sm:ml-0">
+  <div class="bg-white left-96 ring-0 sm:hover:ring-10 hover:ring-white hover:ring-opacity-10  rounded-full cursor-pointer w-40 sm:w-72 h-40 sm:h-72 static sm:relative">
+  <p class="text-black text-center pt-16 sm:pt-0 static sm:absolute right-16 text-2xl sm:text-4xl top-[7.5rem] tracking-widest uppercase ">Explore </p>
 </div>
   </div>
-
 </div>
 </body>
 <script src="script.js"></script>
