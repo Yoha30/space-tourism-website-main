@@ -32,6 +32,7 @@ module.exports = {
       },
       ringWidth:{
         '10':'5rem',
+        '9':'3rem',
       },
       letterSpacing:{
         'large':'0.3rem',

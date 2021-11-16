@@ -11,73 +11,84 @@
 </head>
 <body class="bg-home-sm md:bg-home-md lg:bg-home bg-no-repeat bg-cover	 text-white text-xl">
 <div class=" p-8 ipro:p-12 sm-dt:p-16">
-  <nav class=" flex justify-between flex-row place-items-center">
-    <div>
-   <a href="#"> <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48">
-      <g fill="none" fill-rule="evenodd">
-        <circle cx="24" cy="24" r="24" fill="#FFF"/>
-        <path fill="#0B0D17" d="M24 0c0 16-8 24-24 24 15.718.114 23.718 8.114 24 24 0-16 8-24 24-24-16 0-24-8-24-24z"/>
-      </g>
-    </svg></a>
-    </div>
-      <hr class=" w-96 lg:w-52 sm-dt:w-96 md-dt:w-[34rem] lg-dt:w-96 dt:w-[40rem] hidden ipro:block left-48 lg:left-32 md-dt:left-44 lg-dt:left-40 dt:left-52 top-[5.5rem] z-20 opacity-20 absolute">
-      <div class="block md:hidden cursor-pointer" id="menu-icon">
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="21">
-              <g fill="#D0D6F9" fill-rule="evenodd">
-                  <path d="M0 0h24v3H0zM0 9h24v3H0zM0 18h24v3H0z"/>
-              </g>
-          </svg>
-      </div>
-  <div class="  backdrop-blur-xl bg-transparent sm:bg-dark-blue lg:bg-transparent hidden md:block absolute right-0 top-0 md:top-4 ipro:top-6 sm-dt:top-10	h-full md:h-[5.5rem] xl:h-24 w-72 md:w-[32rem] ipro:w-[40rem] sm-dt:w-[70rem] " id="open-menu">
-      <ul class=" mt-28 ml-10  flex-col md:flex-row hidden  place-content-start sm:place-items-center tracking-widest z-10 pr-0 sm:pr-20" id="menu-list">
-          <li class="cursor-pointer "><a href="index.html"> 00 Home</a>
-              <hr class="w-full relative hidden tab:block top-8">
-          </li>
-          <li class=" py-8 cursor-pointer"><a href="destination-moon.html"> 01 Destination </a>
-              <hr class="w-full relative  hidden top-8 ">
-          </li>
-          <li class="cursor-pointer " ><a href="crew-commander.html.html">02 Crew</a>
-              <hr class="w-full relative  top-8 hidden">
-          </li>
-          <li class="py-8 cursor-pointer "><a href="technology-vehicle.html"> 03 Technology</a>
-              <hr class="w-full relative hidden  top-8 ">
-          </li>
-      </ul>
-      <div id="close-menu" class="absolute right-8 cursor-pointer top-10 block md:hidden opacity-50">
-          <svg class="" xmlns="http://www.w3.org/2000/svg" width="20" height="21">
-              <g fill="#D0D6F9" fill-rule="evenodd">
-                  <path d="M2.575.954l16.97 16.97-2.12 2.122L.455 3.076z"/>
-                  <path d="M.454 17.925L17.424.955l2.122 2.12-16.97 16.97z"/>
-              </g>
-          </svg></div>
-  </div>
+    <nav class=" flex justify-between flex-row place-items-center">
+        <div>
+            <a href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48">
+                    <g fill="none" fill-rule="evenodd">
+                        <circle cx="24" cy="24" r="24" fill="#FFF"/>
+                        <path fill="#0B0D17"
+                              d="M24 0c0 16-8 24-24 24 15.718.114 23.718 8.114 24 24 0-16 8-24 24-24-16 0-24-8-24-24z"/>
+                    </g>
+                </svg>
+            </a>
+        </div>
+        <hr class=" w-96 lg:w-52 sm-dt:w-96 md-dt:w-[34rem] lg-dt:w-96 dt:w-[40rem] hidden ipro:block left-48 lg:left-32 md-dt:left-44 lg-dt:left-40 dt:left-52 top-[5.5rem] z-20 opacity-20 absolute">
+        <div class="block md:hidden cursor-pointer" id="menu-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="21">
+                <g fill="#D0D6F9" fill-rule="evenodd">
+                    <path d="M0 0h24v3H0zM0 9h24v3H0zM0 18h24v3H0z"/>
+                </g>
+            </svg>
+        </div>
+        <div class=" z-10 ipro:z-0 backdrop-blur-xl bg-transparent sm:bg-dark-blue lg:bg-transparent hidden md:block fixed ipad:absolute right-0 top-0 md:top-4 ipro:top-6 sm-dt:top-10	h-full md:h-[5.5rem] xl:h-24 w-72 md:w-[32rem] ipro:w-[42rem] sm-dt:w-[46rem] lg-dt:w-[65rem] dt:w-[70rem] "
+             id="open-menu">
+            <ul class=" mt-28 ml-10  flex-col md:flex-row hidden  place-content-start sm:place-items-center tracking-widest z-10 pr-0 sm:pr-20"
+                id="menu-list">
+                <li class="cursor-pointer "><a href="index.html"> 00 Home</a>
+                    <hr class="w-full relative hidden tab:block top-8">
+                </li>
+                <li class=" py-8 cursor-pointer"><a href="destination-moon.html"> 01 Destination </a>
+                    <hr class="w-full relative  hidden tab:block top-8 ">
+                </li>
+                <li class="cursor-pointer "><a href="crew-commander.html.html">02 Crew</a>
+                    <hr class="w-full relative  top-8 hidden">
+                </li>
+                <li class="py-8 cursor-pointer "><a href="technology-vehicle.html"> 03 Technology</a>
+                    <hr class="w-full relative hidden  top-8 ">
+                </li>
+            </ul>
+            <div id="close-menu" class="absolute right-8 cursor-pointer top-10 block md:hidden opacity-50">
+                <svg class="" xmlns="http://www.w3.org/2000/svg" width="20" height="21">
+                    <g fill="#D0D6F9" fill-rule="evenodd">
+                        <path d="M2.575.954l16.97 16.97-2.12 2.122L.455 3.076z"/>
+                        <path d="M.454 17.925L17.424.955l2.122 2.12-16.97 16.97z"/>
+                    </g>
+                </svg>
+            </div>
+        </div>
 
-    <ul class=" hidden md:flex flex-col sm:flex-row   place-content-start sm:place-items-center tracking-widest z-10 pr-0 2xl:pr-20">
- <li class="cursor-pointer text-xl md:text-lg lg:text-xl"><a href="index.html"><p class="font-bold inline-block md:hidden lg:inline-block"> 00</p> Home</a>
-     <hr class="w-full relative hidden sm:block top-8">
- </li>
-        <li class=" px-8 2xl:px-20 cursor-pointer text-xl md:text-lg xl:text-xl" id="list"><a href="destination-moon.html"> <p class="font-bold inline-block md:hidden lg:inline-block">01</p> Destination </a>
-     <hr class="w-full relative  hidden top-8 " id="line">
- </li>
-        <li class="cursor-pointer text-xl md:text-lg xl:text-xl" id="list-2"><a href="crew-commander.html.html"><p class="font-bold inline-block md:hidden lg:inline-block">02</p> Crew</a>
-          <hr class="w-full relative  top-8 hidden" id="line-2">
-      </li>
-        <li class=" px-8 2xl:px-20 cursor-pointer text-xl md:text-lg xl:text-xl" id="list-3"><a href="technology-vehicle.html"><p class="font-bold inline-block md:hidden lg:inline-block"> 03</p> Technology</a>
- <hr class="w-full relative hidden  top-8 " id="line-3">
- </li>
-    </ul>
-  </nav>
-    <div class="flex flex-col ipro:flex-row  justify-start sm:justify-between  place-items-end sm:place-items-start md:place-items-center lg:place-items-end mt-0 ix:mt-8 ipad:mt-20 lg:mt-0 h-[33.75rem] xs:h-full ix:h-[41.6rem] pixel:h-full ipro:h-[26rem]  sm-dt:h-[37.6rem] dt:h-[40rem] ml-5 pixel:ml-4 sm-dt:ml-40">
-<div>
-    <p class=" tracking-normal ix:tracking-widest sm:tracking-large text-xs ix:text-sm ipad:text-xl tab:text-base pl-[3.8rem] fold:pl-[2.7rem] ix:pl-[3.2rem] pixel:pl-14  plus:pl-[4.5rem]  ipro:pl-0 pt-10  se:pt-6 ix:pt-10 md:pt-20 lg:pt-0 uppercase  text-baby-blue"> So, you want to travel to</p>
+        <ul class=" hidden md:flex flex-col sm:flex-row   place-content-start sm:place-items-center tracking-widest z-10 pr-0 lg-dt:pr-20">
+            <li class="cursor-pointer text-xl md:text-lg lg:text-xl" ><a href="index.html"><p
+                    class="font-bold inline-block md:hidden lg:inline-block"> 00</p> Home</a>
+                <hr class="w-full relative hidden  sm:block left-1 top-8 ipro:top-5 md-dt:top-8">
+            </li>
+            <li class=" px-8 2xl:px-20 cursor-pointer text-xl md:text-lg xl:text-xl" id="list"><a href="destination-moon.html"><p
+                    class="font-bold inline-block md:hidden lg:inline-block">01</p> Destination </a>
+                <hr class="w-full relative hidden   ipro:top-5 md-dt:top-8 " id="line">
+            </li>
+            <li class="cursor-pointer text-xl md:text-lg xl:text-xl" id="list-2"><a href="crew-commander.html.html"><p
+                    class="font-bold inline-block md:hidden lg:inline-block">02</p> Crew</a>
+                <hr class="w-full relative top-8 ipro:top-5 md-dt:top-8 hidden" id="line-2">
+            </li>
+            <li class=" px-8 2xl:px-20 cursor-pointer text-xl md:text-lg xl:text-xl" id="list-3"><a
+                    href="technology-vehicle.html"><p class="font-bold inline-block md:hidden lg:inline-block"> 03</p>
+                Technology</a>
+                <hr class="w-full relative hidden top-8 ipro:top-5 md-dt:top-8 " id="line-3">
+            </li>
+        </ul>
+    </nav>
+    <div class="flex flex-col ipro:flex-row  justify-start sm:justify-between  place-items-end sm:place-items-start md:place-items-center wide:place-items-center dt:place-items-end mt-0 ix:mt-8 ipad:mt-20 ipro:mt-0 lg:mt-0 h-[33.75rem] xs:h-full ix:h-[41.6rem] pixel:h-full ipro:h-[26rem]  sm-dt:h-[37.6rem] wide:h-[33.6rem] dt:h-[40rem] ml-5 pixel:ml-4 sm-dt:ml-20 dt:ml-40">
+<div class="block plus:flex duo:block flex-col place-items-start plus:place-items-center duo:place-items-start">
+    <p class=" tracking-normal ix:tracking-widest sm:tracking-large text-xs ix:text-sm ipad:text-xl tab:text-base pl-[3.8rem] fold:pl-[2.7rem] ix:pl-[3.2rem] pixel:pl-14  plus:pl-[4.5rem] duo:pl-[3.2rem]  ipro:pl-0 pt-10  se:pt-6 ix:pt-10 md:pt-20 lg:pt-0 uppercase  text-baby-blue"> So, you want to travel to</p>
   <h1 class=" text-5xl ix:text-7xl plus:text-8xl ipad:text-9xl tracking-widest my-5 sm:my-12 pl-[3.8rem] fold:pl-10 ix:pl-[2.7rem] pixel:pl-14 plus:pl-[4.5rem] ipad:pl-0 ipro:pl-0  uppercase">Space</h1>
- <p class=" w-56 fold: w-60 ix:w-72 pixel:w-[20rem] ipad:w-[26.5rem] ipro:w-[26rem] sm-dt:w-[25rem] tracking-wide text-baby-blue leading-6 pixel:leading-normal text-xs pixel:text-sm dt:text-lg text-center lg:text-left ml-1 ix:ml-4 pixel:ml-0 pl-8 fold:pl-0 ix:pl-0 pixel:pl-4 plus:pl-10 ipro:pl-0"  > Let’s face it; if you want to go to space, you might as well genuinely go to
+ <p class=" w-56 fold: w-60 ix:w-72 pixel:w-80 plus:w-92 ipad:w-[26.5rem] ipro:w-[26rem] sm-dt:w-[25rem] tracking-wide text-baby-blue leading-6 pixel:leading-normal text-xs pixel:text-sm dt:text-lg text-center lg:text-left ml-1 ix:ml-4 pixel:ml-0 plus:ml-12 duo:ml-0 pl-8 fold:pl-0 ix:pl-0 pixel:pl-4 plus:pl-4 ipro:pl-0"  > Let’s face it; if you want to go to space, you might as well genuinely go to
   outer space and not hover kind of on the edge of it. Well sit back, and relax
   because we’ll give you a truly out of this world experience!</p>
 </div>
-  <div class="  mr-[1.8rem] xs:mr-10 ix:mr-[3.8rem] pixel:mr-20 md:mr-8 dt:mr-36   mt-8 xs:mt-6 ix:mt-10 pixel:mt-16 ipad:mt-[6.5rem] tab:mt-0 ml-8 ix:ml-[5.5rem] pixel:ml-[5.5rem] plus:ml-28 ipad:ml-8 lg:ml-0">
-  <div class="bg-white ml-0 ipro:ml-20 sm-dt:ml-0  ring-0 sm:hover:ring-10 hover:ring-white hover:ring-opacity-10  rounded-full cursor-pointer w-40 md:w-60 lg:w-72 h-40 md:h-60 lg:h-72">
-  <p class="text-black text-center pt-16 ipad:pt-24 tab:pt-30  text-2xl sm:text-4xl tracking-widest uppercase ">Explore </p>
+  <div class="  mr-0 fold:mr-[1.1rem] ix:mr-[2.3rem] pixel:mr-12 plus:mr-[3.8rem] ipro:mr-8 lg-dt:mr-40   mt-8 xs:mt-6 ix:mt-24 pixel:mt-16 ipad:mt-[6.5rem] tab:mt-0 ml-8 ix:ml-[5.5rem] pixel:ml-[5.5rem] plus:ml-28 ipad:ml-8 lg:ml-0">
+  <div class="bg-white ml-0 ipro:ml-20 sm-dt:ml-0  ring-0 ipro:hover:ring-9 sm-dt:hover:ring-10 hover:ring-white hover:ring-opacity-10  rounded-full cursor-pointer w-52 md:w-60 lg:w-72 h-52 md:h-60 lg:h-72">
+  <p class="text-black text-center pt-[5.3rem] ipad:pt-24 ipro:pt-30  text-2xl sm:text-4xl tracking-widest uppercase ">Explore </p>
 </div>
   </div>
   </div>
