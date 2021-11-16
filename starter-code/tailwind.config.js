@@ -49,7 +49,8 @@ module.exports = {
         'wide':'1355px',
         'md-dt':'1400px',
         'lg-dt':'1500px',
-        'dt':'1700px',
+        'xl-dt':'1700px',
+        'dt':'1800px',
        },
       margin:{
         '85':'22rem',
@@ -57,6 +58,7 @@ module.exports = {
       padding:{
         '30':'7.5rem',
         '18':'4.5rem',
+        '34':'8.5rem',
       },
       height:{
         '98':'33.8rem',
