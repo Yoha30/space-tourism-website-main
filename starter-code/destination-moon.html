@@ -10,7 +10,7 @@
 
     <title> Space tourism website</title>
     <style>
-        img{
+        img {
             max-width: none !important;
         }
     </style>
@@ -84,48 +84,215 @@
             </li>
         </ul>
     </nav>
-    <div class="">
-        <h1 class=" pl-5 fold:pl-11 ix:pl-14 pixel:pl-8 plus:pl-12 duo:pl-0 ipro:pl-20 dt:pl-36  pt-8 ipro:pt-14 dt:pt-24 tracking-widest sm:tracking-large uppercase text-xs ix:text-sm pixel:text-lg duo:text-sm sm-dt:text-2xl"><p
-                class="tracking-widest font-extrabold inline-block text-gray-500">01</p> Pick
+    <div class="" id="moon-section">
+        <h1 class=" mt-0 ipad:mt-8 ipro:mt-0 pl-5 fold:pl-11 ix:pl-14 pixel:pl-8 plus:pl-12 duo:pl-0 ipro:pl-20 dt:pl-36  pt-8 ipro:pt-14 dt:pt-24 tracking-widest sm:tracking-large uppercase text-xs ix:text-sm pixel:text-lg duo:text-sm sm-dt:text-2xl">
+            <p class="tracking-widest font-extrabold inline-block text-gray-500">01</p> Pick
             your destination
         </h1>
         <div class="flex flex-col ipro:flex-row place-items-start duo:place-items-center ipro:place-items-start ml-0 ipro:ml-20 wide:ml-28 dt:ml-0 mt-5 duo:mt-5 sm-dt:mt-10 dt:mt-20">
             <div class="pl-8 fold:pl-14  ix:pl-16 plus:pl-18 duo:pl-8 dt:pl-48 ">
-                <img src="assets/destination/image-moon.png" alt="moon" class="  w-40 fold:w-40 ix:w-48 pixel:w-52 plus:w-56 duo:w-72 ipad:w-96 ipro:w-72 sm-dt:w-96 wide:w-95 lg-dt:w-94 dt:w-[32rem] pt-2 ipro:pt-16 dt:pt-8">
+                <img src="assets/destination/image-moon.png" alt="moon"
+                     class="  w-40 fold:w-40 ix:w-48 pixel:w-52 plus:w-56 duo:w-72 ipad:w-96 ipro:w-72 sm-dt:w-96 wide:w-95 lg-dt:w-94 dt:w-[32rem] pt-2 ipro:pt-16 dt:pt-8">
             </div>
             <div class=" ml-0 duo:ml-10 ipro:ml-6 wide:ml-16 md-dt:ml-32 lg-dt:ml-16 dt:ml-85 mt-8 duo:mt-10 dt:mt-0 m-0 duo:m-10 dt:m-0">
                 <div class="uppercase text-xs ix:text-sm plus:text-lg ipro:text-base ml-3 fold:ml-4 ix:ml-8 plus:ml-5 duo:ml-28 dt:ml-0  text-gray-500 tracking-widest">
                     <ul class="flex flex-row">
-                        <li class="cursor-pointer text-white "><a> Moon </a>
+                        <li class="cursor-pointer text-white"><a> Moon </a>
                             <hr class="w-full relative block top-2 h-1 border-none bg-gray-400" id="moon-line">
                         </li>
-                        <li class=" px-3 fold:px-5 dt:px-10 " data-foo="1"><a href="destination-mars.html"> Mars</a>
+                        <li class=" px-3 fold:px-5 dt:px-10 cursor-pointer" data-foo="1" id="mars" onclick="marsMenu()"> Mars
                             <hr class="w-full relative hidden top-2 h-1 border-none bg-gray-500" id="mars-line">
                         </li>
-                        <li data-foo="2"><a href="destination-europa.html"> Europa</a>
+                        <li data-foo="2" class="cursor-pointer europa-menu" onclick="europaMenu()"> Europa
                             <hr class="w-full relative hidden top-2 h-1 border-none bg-gray-500" id="europa-line">
                         </li>
-                        <li data-foo="3" class=" px-3 fold:px-5 dt:px-10"><a href="destination-titan.html"> Titan</a>
+                        <li data-foo="3" class=" px-3 fold:px-5 dt:px-10 cursor-pointer" onclick="titanMenu ()"> Titan
                             <hr class="w-full relative hidden top-2 h-1 border-none bg-gray-500" id="titan-line">
                         </li>
                     </ul>
                 </div>
-                <p class=" text-6xl ix:text-6xl duo:text-7xl sm-dt:text-8xl  dt:text-9xl text-white uppercase ml-5 fold:ml-10 ix:ml-16 pixel:ml-[4.5rem] plus:ml-20 duo:ml-[9.5rem] ipro:ml-28 dt:ml-0 my-8 ipro:my-6 dt:my-10"> Moon</p>
+                <p class=" text-6xl ix:text-6xl duo:text-7xl sm-dt:text-8xl  dt:text-9xl text-white uppercase ml-5 fold:ml-10 ix:ml-16 pixel:ml-[4.5rem] plus:ml-20 duo:ml-[9.5rem] ipro:ml-28 dt:ml-0 my-8 ipro:my-6 dt:my-10">
+                    Moon</p>
                 <div>
-               <p class=" leading-6 sm:leading-9 text-gray-500 w-52 fold:w-56 ix:w-64 plus:w-72 duo:w-[32rem] ipro:w-92 sm-dt:w-97 dt:w-98 mb-5 ipro:mb-8 dt:mb-14 ml-1 fold:ml-5 ix:ml-8 pixel:ml-9 duo:ml-0 ipro:ml-28 dt:ml-0 text-center ipro:text-left text-xs fold:text-sm sm-dt:text-lg dt:text-xl"> See our planet as you’ve never seen it before. A perfect relaxing trip away to help
-                regain perspective and come back refreshed. While you’re there, take in some history
-                by visiting the Luna 2 and Apollo 11 landing sites.</p>
+                    <p class=" leading-6 sm:leading-9 text-gray-500 w-52 fold:w-56 ix:w-64 plus:w-72 duo:w-[32rem] ipro:w-92 sm-dt:w-97 dt:w-98 mb-5 ipro:mb-8 dt:mb-14 ml-1 fold:ml-5 ix:ml-8 pixel:ml-9 duo:ml-0 ipro:ml-28 dt:ml-0 text-center ipro:text-left text-xs fold:text-sm sm-dt:text-lg dt:text-xl">
+                        See our planet as you’ve never seen it before. A perfect relaxing trip away to help
+                        regain perspective and come back refreshed. While you’re there, take in some history
+                        by visiting the Luna 2 and Apollo 11 landing sites.</p>
                 </div>
                 <hr class="w-full ipro:w-92 sm-dt:w-97  dt:w-full ml-0 ipro:ml-28 dt:ml-0  mb-5 sm:mb-8 border-none bg-gray-400 h-px opacity-30 ">
-                    <div class="flex flex-col sm:flex-row ml-0 ipro:ml-8 sm-dt:ml-12 dt:ml-0  justify-between duo:justify-evenly dt:justify-between place-items-center sm:place-items-start w-56 fold:w-[16.5rem] ix:w-80 pixel:w-81 plus:w-92 duo:w-[32rem]  dt:w-96">
-                        <div>
-                    <p class="uppercase text-base ipro:text-sm sm-dt:text-base text-gray-500 tracking-widest mb-2 ml-3 sm:ml-0">Avg. distance</p>
-                    <p class="text-white uppercase text-3xl ipro:text-2xl sm-dt:text-3xl mb-5 sm:mb-0">384,400 km</p>
-                        </div>
-                        <div>
-                   <p class="uppercase text-base ipro:text-sm sm-dt:text-base text-gray-500 tracking-widest mb-2"> Est. travel time</p>
-                    <p class="text-white uppercase text-3xl ipro:text-2xl sm-dt:text-3xl ml-6 sm:ml-0">3 days</p>
-                        </div>
+                <div class="flex flex-col sm:flex-row ml-0 ipro:ml-8 sm-dt:ml-12 dt:ml-0  justify-between duo:justify-evenly dt:justify-between place-items-center sm:place-items-start w-56 fold:w-[16.5rem] ix:w-80 pixel:w-81 plus:w-92 duo:w-[32rem]  dt:w-96">
+                    <div>
+                        <p class="uppercase text-base ipro:text-sm sm-dt:text-base text-gray-500 tracking-widest mb-2 ml-3 sm:ml-0">
+                            Avg. distance</p>
+                        <p class="text-white uppercase text-3xl ipro:text-2xl sm-dt:text-3xl mb-5 sm:mb-0">384,400
+                            km</p>
+                    </div>
+                    <div>
+                        <p class="uppercase text-base ipro:text-sm sm-dt:text-base text-gray-500 tracking-widest mb-2">
+                            Est. travel time</p>
+                        <p class="text-white uppercase text-3xl ipro:text-2xl sm-dt:text-3xl ml-6 sm:ml-0">3 days</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="hidden" id="mars-section">
+        <h1 class=" pl-5 fold:pl-11 ix:pl-14 pixel:pl-8 plus:pl-12 duo:pl-0 ipro:pl-20 dt:pl-36  pt-8 ipro:pt-14 dt:pt-24 tracking-widest sm:tracking-large uppercase text-xs ix:text-sm pixel:text-lg duo:text-sm sm-dt:text-2xl mt-0 ipad:mt-8 ipro:mt-0">
+            <p class="tracking-widest font-extrabold inline-block text-gray-500">01</p> Pick
+            your destination
+        </h1>
+        <div class="flex flex-col ipro:flex-row place-items-start duo:place-items-center ipro:place-items-start ml-0 ipro:ml-20 wide:ml-28 dt:ml-0 mt-5 duo:mt-5 sm-dt:mt-10 dt:mt-20">
+            <div class="pl-8 fold:pl-14  ix:pl-16 plus:pl-18 duo:pl-8 dt:pl-48 ">
+                <img src="assets/destination/image-mars.png" alt="mars"
+                     class="  w-40 fold:w-40 ix:w-48 pixel:w-52 plus:w-56 duo:w-72 ipad:w-96 ipro:w-72 sm-dt:w-96 wide:w-95 lg-dt:w-94 dt:w-[32rem] pt-2 ipro:pt-16 dt:pt-8">
+            </div>
+            <div class=" ml-0 duo:ml-10 ipro:ml-6 wide:ml-16 md-dt:ml-32 lg-dt:ml-16 dt:ml-85 mt-8 duo:mt-10 dt:mt-0 m-0 duo:m-10 dt:m-0">
+                <div class="uppercase text-xs ix:text-sm plus:text-lg ipro:text-base ml-3 fold:ml-4 ix:ml-8 plus:ml-5 duo:ml-28 dt:ml-0  text-gray-500 tracking-widest">
+                    <ul class="flex flex-row">
+                        <li class="cursor-pointer  " id="moon" onclick="moonMenu()"><a> Moon </a>
+                            <hr class="w-full relative hidden top-2 h-1 border-none bg-gray-400" data-foo="4">
+                        </li>
+                        <li class=" px-3 fold:px-5 dt:px-10 text-white" data-foo="1"><a href="destination-mars.html">
+                            Mars</a>
+                            <hr class="w-full relative block top-2 h-1 border-none bg-gray-500">
+                        </li>
+                        <li data-foo="2" class="cursor-pointer europa-menu" id="europa" onclick="europaMenu()"> Europa
+                            <hr class="w-full relative hidden top-2 h-1 border-none bg-gray-500" data-foo="6">
+                        </li>
+                        <li data-foo="3" class=" px-3 fold:px-5 dt:px-10" id="titan" onclick="titanMenu ()">
+                            Titan
+                            <hr class="w-full relative hidden top-2 h-1 border-none bg-gray-500" data-foo="7">
+                        </li>
+                    </ul>
+                </div>
+                <p class=" text-6xl ix:text-7xl duo:text-7xl sm-dt:text-8xl  dt:text-9xl text-white uppercase ml-5 fold:ml-10 ix:ml-16 pixel:ml-[4.5rem] plus:ml-20 duo:ml-[10.5rem] ipro:ml-28 dt:ml-0 my-8 ipro:my-6 dt:my-10">
+                    Mars</p>
+                <div>
+                    <p class=" leading-6 sm:leading-9 text-gray-500 w-52 fold:w-64 ix:w-72 plus:w-80 duo:w-93 ipro:w-92 sm-dt:w-97 dt:w-98 mb-5 ipro:mb-8 dt:mb-14 ml-1 fold:ml-0 ix:ml-5 pixel:ml-9 plus:ml-5 duo:ml-[3.5rem] ipro:ml-28 dt:ml-0 text-center ipro:text-left text-xs fold:text-sm sm-dt:text-lg dt:text-xl">
+                        Don’t forget to pack your hiking boots. You’ll need them to tackle Olympus Mons,
+                        the tallest planetary mountain in our solar system. It’s two and a half times
+                        the size of Everest!</p>
+                </div>
+                <hr class="w-full ipro:w-92 sm-dt:w-97  dt:w-full ml-0 ipro:ml-28 dt:ml-0  mb-5 sm:mb-8 border-none bg-gray-400 h-px opacity-30 ">
+                <div class="flex flex-col sm:flex-row ml-0 ipro:ml-8 sm-dt:ml-12 dt:ml-0  justify-between duo:justify-evenly dt:justify-between place-items-center sm:place-items-start w-56 fold:w-[16.5rem] ix:w-80 pixel:w-81 plus:w-92 duo:w-[32rem]  dt:w-97">
+                    <div>
+                        <p class="uppercase text-base ipro:text-sm sm-dt:text-base text-gray-500 tracking-widest mb-2 ml-3 sm:ml-0">
+                            Avg. distance</p>
+                        <p class="text-white uppercase text-3xl ipro:text-2xl sm-dt:text-3xl mb-5 sm:mb-0">225 mil. km</p>
+                    </div>
+                    <div>
+                        <p class="uppercase text-base ipro:text-sm sm-dt:text-base text-gray-500 tracking-widest mb-2">
+                            Est. travel time</p>
+                        <p class="text-white uppercase text-3xl ipro:text-2xl sm-dt:text-4xl ml-0">9 months</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="hidden" id="europa-section">
+        <h1 class=" pl-5 fold:pl-11 ix:pl-14 pixel:pl-8 plus:pl-12 duo:pl-0 ipro:pl-20 dt:pl-36  pt-8 ipro:pt-14 dt:pt-24 tracking-widest sm:tracking-large uppercase text-xs ix:text-sm pixel:text-lg duo:text-sm sm-dt:text-2xl mt-0 ipad:mt-8 ipro:mt-0">
+            <p class="tracking-widest font-extrabold inline-block text-gray-500">01</p> Pick
+            your destination
+        </h1>
+        <div class="flex flex-col ipro:flex-row place-items-start duo:place-items-center ipro:place-items-start ml-0 ipro:ml-20 wide:ml-28 dt:ml-0 mt-5 duo:mt-5 sm-dt:mt-10 dt:mt-20">
+            <div class="pl-8 fold:pl-14  ix:pl-16 plus:pl-18 duo:pl-8 dt:pl-48 ">
+                <img src="assets/destination/image-europa.png" alt="moon"
+                     class="  w-40 fold:w-40 ix:w-48 pixel:w-52 plus:w-56 duo:w-72 ipad:w-96 ipro:w-72 sm-dt:w-96 wide:w-95 lg-dt:w-94 dt:w-[32rem] pt-2 ipro:pt-16 dt:pt-8">
+            </div>
+            <div class=" ml-0 duo:ml-10 ipro:ml-6 wide:ml-16 md-dt:ml-32 lg-dt:ml-16 dt:ml-85 mt-8 duo:mt-10 dt:mt-0 m-0 duo:m-10 dt:m-0">
+                <div class="uppercase text-xs ix:text-sm plus:text-lg ipro:text-base ml-3 fold:ml-4 ix:ml-8 plus:ml-5 duo:ml-28 dt:ml-0  text-gray-500 tracking-widest">
+                    <ul class="flex flex-row">
+                        <li class="cursor-pointer  " id="moon-europa-section" onclick="moonMenu()"><a> Moon </a>
+                            <hr class="w-full relative hidden top-2 h-1 border-none bg-gray-400" data-foo="8">
+                        </li>
+                        <li class=" px-3 fold:px-5 dt:px-10 cursor-pointer" data-foo="1" id="mars-europa-section" onclick="marsMenu()">
+                            Mars
+                            <hr class="w-full relative hidden top-2 h-1 border-none bg-gray-500" data-foo="9">
+                        </li>
+                        <li data-foo="2" class="text-white cursor-pointer"> Europa
+                            <hr class="w-full relative block top-2 h-1 border-none bg-gray-500" >
+                        </li>
+                        <li data-foo="3" class=" px-3 fold:px-5 dt:px-10 cursor-pointer" id="titan-europa-section" onclick="titanMenu ()">
+                            Titan
+                            <hr class="w-full relative hidden top-2 h-1 border-none bg-gray-500" data-foo="10">
+                        </li>
+                    </ul>
+                </div>
+                <p class=" text-6xl ix:text-7xl duo:text-7xl sm-dt:text-8xl  dt:text-9xl text-white uppercase ml-5 fold:ml-5 ix:ml-7 pixel:ml-[4.5rem] plus:ml-12 duo:ml-36 ipro:ml-28 dt:ml-0 my-8 ipro:my-6 dt:my-10">
+                    Europa</p>
+                <div>
+                    <p class=" leading-6 sm:leading-9 text-gray-500 w-52 fold:w-64 ix:w-80 plus:w-92 duo:w-93 ipro:w-92 sm-dt:w-97 dt:w-98 mb-5 ipro:mb-8 dt:mb-14 ml-1 fold:ml-0 ix:ml-0 pixel:ml-9 plus:ml-0 duo:ml-[3.5rem] ipro:ml-28 dt:ml-0 text-center ipro:text-left text-xs fold:text-sm sm-dt:text-lg dt:text-xl">
+                        The smallest of the four Galilean moons orbiting Jupiter, Europa is a
+                        winter lover’s dream. With an icy surface, it’s perfect for a bit of
+                        ice skating, curling, hockey, or simple relaxation in your snug
+                        wintery cabin.</p>
+                </div>
+                <hr class="w-full ipro:w-92 sm-dt:w-97  dt:w-full ml-0 ipro:ml-28 dt:ml-0  mb-5 sm:mb-8 border-none bg-gray-400 h-px opacity-30 ">
+                <div class="flex flex-col sm:flex-row ml-0 ipro:ml-8 sm-dt:ml-12 dt:ml-0  justify-between duo:justify-evenly dt:justify-between place-items-center sm:place-items-start w-56 fold:w-[16.5rem] ix:w-80 pixel:w-81 plus:w-92 duo:w-[32rem]  dt:w-97">
+                    <div>
+                        <p class="uppercase text-base ipro:text-sm sm-dt:text-base text-gray-500 tracking-widest mb-2 ml-3 sm:ml-0">
+                            Avg. distance</p>
+                        <p class="text-white uppercase text-3xl ipro:text-2xl sm-dt:text-3xl mb-5 sm:mb-0">628 mil. km</p>
+                    </div>
+                    <div>
+                        <p class="uppercase text-base ipro:text-sm sm-dt:text-base text-gray-500 tracking-widest mb-2">
+                            Est. travel time</p>
+                        <p class="text-white uppercase text-3xl ipro:text-2xl sm-dt:text-4xl ml-4 sm:ml-0">3 years</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="hidden" id="titan-section">
+        <h1 class=" pl-5 fold:pl-11 ix:pl-14 pixel:pl-8 plus:pl-12 duo:pl-0 ipro:pl-20 dt:pl-36  pt-8 ipro:pt-14 dt:pt-24 tracking-widest sm:tracking-large uppercase text-xs ix:text-sm pixel:text-lg duo:text-sm sm-dt:text-2xl mt-0 ipad:mt-8 ipro:mt-0">
+            <p class="tracking-widest font-extrabold inline-block text-gray-500">01</p> Pick
+            your destination
+        </h1>
+        <div class="flex flex-col ipro:flex-row place-items-start duo:place-items-center ipro:place-items-start ml-0 ipro:ml-20 wide:ml-28 dt:ml-0 mt-5 duo:mt-5 sm-dt:mt-10 dt:mt-20">
+            <div class="pl-8 fold:pl-14  ix:pl-16 plus:pl-18 duo:pl-8 dt:pl-48 ">
+                <img src="assets/destination/image-titan.png" alt="moon"
+                     class="  w-40 fold:w-40 ix:w-48 pixel:w-52 plus:w-56 duo:w-72 ipad:w-96 ipro:w-72 sm-dt:w-96 wide:w-95 lg-dt:w-94 dt:w-[32rem] pt-2 ipro:pt-16 dt:pt-8">
+            </div>
+            <div class=" ml-0 duo:ml-10 ipro:ml-6 wide:ml-16 md-dt:ml-32 lg-dt:ml-16 dt:ml-85 mt-8 duo:mt-10 dt:mt-0 m-0 duo:m-10 dt:m-0">
+                <div class="uppercase text-xs ix:text-sm plus:text-lg ipro:text-base ml-3 fold:ml-4 ix:ml-8 plus:ml-5 duo:ml-28 dt:ml-0  text-gray-500 tracking-widest">
+                    <ul class="flex flex-row">
+                        <li class="cursor-pointer  " id="moon-titan-section" onclick="moonMenu()"><a> Moon </a>
+                            <hr class="w-full relative hidden top-2 h-1 border-none bg-gray-400" data-foo="12">
+                        </li>
+                        <li class=" px-3 fold:px-5 dt:px-10 cursor-pointer" id="mars-titan-section" onclick="marsMenu()">
+                            Mars
+                            <hr class="w-full relative hidden top-2 h-1 border-none bg-gray-500" data-foo="13">
+                        </li>
+                        <li data-foo="2" class="cursor-pointer" id="europa-titan-section" onclick="europaMenu()"> Europa
+                            <hr class="w-full relative hidden top-2 h-1 border-none bg-gray-500" data-foo="14">
+                        </li>
+                        <li data-foo="3" class=" px-3 fold:px-5 dt:px-10 text-white">
+                            Titan
+                            <hr class="w-full relative block top-2 h-1 border-none bg-gray-500" >
+                        </li>
+                    </ul>
+                </div>
+                <p class=" text-6xl ix:text-7xl duo:text-7xl sm-dt:text-8xl  dt:text-9xl text-white uppercase ml-5 fold:ml-5 ix:ml-7 pixel:ml-[4.5rem] plus:ml-12 duo:ml-36 ipro:ml-28 dt:ml-0 my-8 ipro:my-6 dt:my-10">
+                    Titan</p>
+                <div>
+                    <p class=" leading-6 sm:leading-9 text-gray-500 w-52 fold:w-64 ix:w-80 plus:w-92 duo:w-93 ipro:w-92 sm-dt:w-97 dt:w-98 mb-5 ipro:mb-8 dt:mb-14 ml-1 fold:ml-0 ix:ml-0 pixel:ml-9 plus:ml-0 duo:ml-[3.5rem] ipro:ml-28 dt:ml-0 text-center ipro:text-left text-xs fold:text-sm sm-dt:text-lg dt:text-xl">
+                        The only moon known to have a dense atmosphere other than Earth, Titan
+                        is a home away from home (just a few hundred degrees colder!). As a
+                        bonus, you get striking views of the Rings of Saturn.
+                    </p>
+                </div>
+                <hr class="w-full ipro:w-92 sm-dt:w-97  dt:w-full ml-0 ipro:ml-28 dt:ml-0  mb-5 sm:mb-8 border-none bg-gray-400 h-px opacity-30 ">
+                <div class="flex flex-col sm:flex-row ml-0 ipro:ml-8 sm-dt:ml-12 dt:ml-0  justify-between duo:justify-evenly dt:justify-between place-items-center sm:place-items-start w-56 fold:w-[16.5rem] ix:w-80 pixel:w-81 plus:w-92 duo:w-[32rem]  dt:w-97">
+                    <div>
+                        <p class="uppercase text-base ipro:text-sm sm-dt:text-base text-gray-500 tracking-widest mb-2 ml-3 sm:ml-0">
+                            Avg. distance</p>
+                        <p class="text-white uppercase text-3xl ipro:text-2xl sm-dt:text-3xl mb-5 sm:mb-0">628 mil. km</p>
+                    </div>
+                    <div>
+                        <p class="uppercase text-base ipro:text-sm sm-dt:text-base text-gray-500 tracking-widest mb-2">
+                            Est. travel time</p>
+                        <p class="text-white uppercase text-3xl ipro:text-2xl sm-dt:text-4xl ml-4 sm:ml-0">3 years</p>
+                    </div>
                 </div>
             </div>
         </div>

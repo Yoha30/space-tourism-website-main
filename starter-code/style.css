@@ -1064,20 +1064,12 @@ video {
     display: inline-block;
   }
 
-  .lg\:h-80 {
-    height: 20rem;
-  }
-
   .lg\:h-72 {
     height: 18rem;
   }
 
   .lg\:w-52 {
     width: 13rem;
-  }
-
-  .lg\:w-80 {
-    width: 20rem;
   }
 
   .lg\:w-72 {
@@ -1405,14 +1397,6 @@ video {
 
   .ipro\:pl-0 {
     padding-left: 0px;
-  }
-
-  .ipro\:pt-\[8\.5rem\] {
-    padding-top: 8.5rem;
-  }
-
-  .ipro\:pt-34 {
-    padding-top: 8.5rem;
   }
 
   .ipro\:pt-30 {
