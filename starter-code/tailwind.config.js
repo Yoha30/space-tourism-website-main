@@ -14,6 +14,9 @@ module.exports = {
         'destination':"url('assets/destination/background-destination-desktop.jpg')",
         'destination-sm':"url('assets/destination/background-destination-mobile.jpg')",
         'destination-md':"url('assets/destination/background-destination-tablet.jpg')",
+        'crew':"url('assets/crew/background-crew-desktop.jpg')",
+        'crew-sm':"url('assets/crew/background-crew-mobile.jpg')",
+        'crew-md':"url('assets/crew/background-crew-tablet.jpg')",
       },
       textColor:{
         'baby-blue':'#D0D6F9',
@@ -30,6 +33,7 @@ module.exports = {
       },
       backgroundColor:{
         'dark-blue':'#141728',
+        'gray':'#363841',
       },
       ringWidth:{
         '10':'5rem',

@@ -5,23 +5,303 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
-  
+  <link rel="stylesheet" href="tailwind.css">
+  <link rel="stylesheet" href="crew.css">
   <title>Frontend Mentor | Space tourism website</title>
 </head>
-<body>
+<body class=" bg-crew-sm duo:bg-crew-md ipro:bg-crew bg-cover  bg-no-repeat text-white text-xl">
+<div  class="p-8 ipro:p-12 sm-dt:p-16">
+ <nav class=" flex justify-between flex-row place-items-center">
+  <div>
+    <a href="#">
+      <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48">
+        <g fill="none" fill-rule="evenodd">
+          <circle cx="24" cy="24" r="24" fill="#FFF"/>
+          <path fill="#0B0D17"
+                d="M24 0c0 16-8 24-24 24 15.718.114 23.718 8.114 24 24 0-16 8-24 24-24-16 0-24-8-24-24z"/>
+        </g>
+      </svg>
+    </a>
+  </div>
+  <hr class=" w-96 lg:w-52 sm-dt:w-96 md-dt:w-[34rem] lg-dt:w-96 dt:w-[40rem] hidden ipro:block left-48 lg:left-32 md-dt:left-44 lg-dt:left-40 dt:left-52 top-[5.5rem] z-20 opacity-20 absolute">
+  <div class="block md:hidden cursor-pointer" id="menu-icon">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="21">
+      <g fill="#D0D6F9" fill-rule="evenodd">
+        <path d="M0 0h24v3H0zM0 9h24v3H0zM0 18h24v3H0z"/>
+      </g>
+    </svg>
+  </div>
+  <div class=" z-10 ipro:z-0 backdrop-blur-3xl bg-transparent sm:bg-dark-blue lg:bg-transparent hidden md:block fixed ipad:absolute right-0 top-0 md:top-4 ipro:top-6 sm-dt:top-10	h-full md:h-[5.5rem] xl:h-24 w-72 md:w-[32rem] ipro:w-[42rem] sm-dt:w-[46rem] lg-dt:w-[65rem] dt:w-[70rem] "
+       id="open-menu">
+    <ul class=" mt-28 ml-10  flex-col md:flex-row hidden  place-content-start sm:place-items-center tracking-widest z-10 pr-0 sm:pr-20"
+        id="menu-list">
+      <li class="cursor-pointer "><a href="index.html"> 00 Home</a>
+        <hr class="w-full relative hidden tab:block top-8">
+      </li>
+      <li class=" py-8 cursor-pointer"><a href="destination-moon.html"> 01 Destination </a>
+        <hr class="w-full relative  hidden tab:block top-8 ">
+      </li>
+      <li class="cursor-pointer "><a href="crew-commander.html">02 Crew</a>
+        <hr class="w-full relative  top-8 hidden">
+      </li>
+      <li class="py-8 cursor-pointer "><a href="technology-vehicle.html"> 03 Technology</a>
+        <hr class="w-full relative hidden  top-8 ">
+      </li>
+    </ul>
+    <div id="close-menu" class="absolute right-8 cursor-pointer top-10 block md:hidden opacity-50">
+      <svg class="" xmlns="http://www.w3.org/2000/svg" width="20" height="21">
+        <g fill="#D0D6F9" fill-rule="evenodd">
+          <path d="M2.575.954l16.97 16.97-2.12 2.122L.455 3.076z"/>
+          <path d="M.454 17.925L17.424.955l2.122 2.12-16.97 16.97z"/>
+        </g>
+      </svg>
+    </div>
+  </div>
 
-  00 Home
-  01 Destination
-  02 Crew
-  03 Technology
+  <ul class=" hidden md:flex flex-col sm:flex-row   place-content-start sm:place-items-center tracking-widest z-10 pr-0 lg-dt:pr-20">
+    <li class="cursor-pointer text-xl md:text-lg lg:text-xl" id="list"><a href="index.html"><p
+            class="font-bold inline-block md:hidden lg:inline-block"> 00</p> Home</a>
+      <hr class="w-full relative hidden left-1 top-8 ipro:top-5 md-dt:top-8" id="line">
+    </li>
+    <li class=" px-8 2xl:px-20 cursor-pointer text-xl md:text-lg xl:text-xl"><a href="destination-moon.html"><p
+            class="font-bold inline-block md:hidden lg:inline-block">01</p> Destination </a>
+      <hr class="w-full relative  hidden top-8 ipro:top-5 md-dt:top-8 ">
+    </li>
+    <li class="cursor-pointer text-xl md:text-lg xl:text-xl" id="list-2"><a href="crew-commander.html"><p
+            class="font-bold inline-block md:hidden lg:inline-block">02</p> Crew</a>
+      <hr class="w-full relative top-8 ipro:top-5 md-dt:top-8  left-1 hidden sm:block"  id="line-2">
+    </li>
+    <li class=" px-8 2xl:px-20 cursor-pointer text-xl md:text-lg xl:text-xl" id="list-3"><a
+            href="technology-vehicle.html"><p class="font-bold inline-block md:hidden lg:inline-block"> 03</p>
+      Technology</a>
+      <hr class="w-full relative hidden top-8 ipro:top-5 md-dt:top-8 " id="line-3">
+    </li>
+  </ul>
+</nav>
+<div>
+  <h1 class=" mt-0 ipad:mt-8 ipro:mt-0 pl-5 fold:pl-11 ix:pl-14 pixel:pl-8 plus:pl-12 duo:pl-0 ipro:pl-20 dt:pl-36  pt-8 ipro:pt-14 dt:pt-24 tracking-widest sm:tracking-large uppercase text-xs ix:text-sm pixel:text-lg duo:text-sm sm-dt:text-2xl">
+    <p class="tracking-widest font-extrabold inline-block text-gray-500 pr-5">02</p>Meet your crew</h1>
+  <div class="sliderAx h-auto ">
+    <div class=" text-white px-10 object-fill staitc sm:absolute right-48 bottom-0">
+      <img src="assets/crew/image-douglas-hurley.png">
+    </div>
+    <hr class="w-full">
+    <div id="slider-1" class="container mx-auto">
+        <div class="md:w-1/2 ml-0 sm:ml-[9.5rem] mt-48">
+          <p class=" text-xl sm:text-3xl text-gray-500 uppercase">Commander</p>
+          <p class=" text-lg sm:text-5xl text-white uppercase w-full mt-5">Douglas Hurley</p>
+          <p class=" w-80 sm:w-97 text-baby-blue text-lg mb-10 mt-10 ">Douglas Gerald Hurley is an American engineer, former Marine Corps pilot
+            and former NASA astronaut. He launched into space for the third time as
+            commander of Crew Dragon Demo-2.</p>
+        </div>
+      </div> <!-- container -->
+      <br>
+  </div>
+    <div id="slider-2" class="container mx-auto">
+      <div class=" text-white px-10 object-fill absolute right-48 bottom-0">
+        <img src="assets/crew/image-mark-shuttleworth.png">
+      </div>
+      <div class="md:w-1/2 ml-36 mt-40 mb-[4.5rem]">
+        <p class=" text-3xl text-gray-500 uppercase">Mission Specialist</p>
+        <p class="text-5xl text-white uppercase mt-5">Mark Shuttleworth</p>
+        <p class=" w-97 text-baby-blue text-lg mb-10 mt-10 ">Mark Richard Shuttleworth is the founder and CEO of Canonical, the company behind
+          the Linux-based Ubuntu operating system. Shuttleworth became the first South
+          African to travel to space as a space tourist.</p>
+      </div>
+    </div> <!-- container -->
+    <br>
+  </div>
+  <div id="slider-3" class="container mx-auto">
+    <div class="md:w-1/2 ml-36 mt-32 mb-[4.75rem]">
+      <p class=" text-3xl text-gray-500 uppercase">Pilot</p>
+      <p class="text-5xl text-white uppercase mt-5">Victor Glover</p>
+      <p class=" w-97 text-baby-blue text-lg mb-10 mt-10 ">Pilot on the first operational flight of the SpaceX Crew Dragon to the
+        International Space Station. Glover is a commander in the U.S. Navy where
+        he pilots an F/A-18.He was a crew member of Expedition 64, and served as a
+        station systems flight engineer. </p>
+    </div>
+    <div class=" text-white px-10 object-fill absolute right-48 bottom-0">
+      <img src="assets/crew/image-victor-glover.png">
+    </div>
 
-  02 Meet your crew
+  </div> <!-- container -->
+  <br>
+</div>
+<div id="slider-4" class="container mx-auto">
+  <div class="md:w-1/2 ml-36 mt-10 mb-48">
+    <p class=" text-3xl text-gray-500 uppercase">Flight Engineer</p>
+    <p class="text-5xl text-white uppercase mt-5">Anousheh Ansari</p>
+    <p class=" w-97 text-baby-blue text-lg mb-10 mt-10 ">Anousheh Ansari is an Iranian American engineer and co-founder of Prodea Systems.
+      Ansari was the fourth self-funded space tourist, the first self-funded woman to
+      fly to the ISS, and the first Iranian in space.<p>
+  </div>
+  <div class=" text-white px-10 object-fill absolute right-48 bottom-0">
+    <img src="assets/crew/image-anousheh-ansari.png">
+  </div>
 
-  Commander
-  Douglas Hurley
+</div> <!-- container -->
+<br>
+</div>
+  <div  class="flex justify-between w-32 mx-auto pb-2 absolute left-60">
+    <button id="sButton1" onclick="sliderButton1()" class=" rounded-full w-4 pb-2 " ></button>
+    <button id="sButton2" onclick="sliderButton2() " class="bg-gray rounded-full w-4 p-2 mx-4"></button>
+    <button id="sButton3" onclick="sliderButton3() " class="bg-gray rounded-full w-4 p-2 "></button>
+    <button id="sButton4" onclick="sliderButton4() " class="bg-gray rounded-full w-4 p-2 mx-4"></button>
+  </div>
 
-  Douglas Gerald Hurley is an American engineer, former Marine Corps pilot 
-  and former NASA astronaut. He launched into space for the third time as 
-  commander of Crew Dragon Demo-2.
+<!--<div>
+ <p class="text-3xl text-gray-500 uppercase"> Commander</p>
+  <p class=" ">Douglas Hurley</p>
+
+ <p class="w-97 text-baby-blue text-lg"> Douglas Gerald Hurley is an American engineer, former Marine Corps pilot
+  and former NASA astronaut. He launched into space for the third time as
+  commander of Crew Dragon Demo-2.</p>
+</div>-->
+</div>
 </body>
+<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+<script>
+  var cont=0;
+  function loopSlider(){
+    var xx= function(){
+      switch(cont)
+      {
+        case 3:{
+          $("#slider-1").fadeOut(400);
+          $("#slider-2").fadeOut(400);
+          $("#slider-3").fadeOut(400);
+          $("#slider-4").delay(400).fadeIn(400);
+          $("#sButton2").removeClass("bg-white");
+          $("#sButton1").addClass("bg-gray");
+          $("#sButton1").removeClass("bg-white");
+          $("#sButton2").addClass("bg-gray");
+          $("#sButton3").removeClass("bg-white");
+          $("#sButton3").addClass("bg-gray");
+          $("#sButton4").removeClass("bg-gray");
+          $("#sButton4").addClass("bg-white");
+          cont=3;
+          break;
+        }
+        case 2:{
+          $("#slider-1").fadeOut(400);
+          $("#slider-2").fadeOut(400);
+          $("#slider-4").fadeOut(400);
+          $("#slider-3").delay(400).fadeIn(400);
+          $("#sButton2").removeClass("bg-white");
+          $("#sButton1").addClass("bg-gray");
+          $("#sButton1").removeClass("bg-white");
+          $("#sButton2").addClass("bg-gray");
+          $("#sButton3").addClass("bg-white");
+          $("#sButton3").removeClass("bg-gray");
+          $("#sButton4").removeClass("bg-white");
+          $("#sButton4").addClass("bg-gray");cont=2;
+          break;
+        }
+        case 0:{
+          $("#slider-1").fadeOut(400);
+          $("#slider-3").fadeOut(400);
+          $("#slider-4").fadeOut(400);
+          $("#slider-2").delay(400).fadeIn(400);
+          $("#sButton1").removeClass("bg-white");
+          $("#sButton2").addClass("bg-white");
+          $("#sButton1").addClass("bg-gray");
+          $("#sButton2").removeClass("bg-gray");
+          $("#sButton3").removeClass("bg-white");
+          $("#sButton4").removeClass("bg-white");
+          $("#sButton4").addClass("bg-gray");
+          $("#sButton3").addClass("bg-gray");
+          cont=1;
+
+          break;
+        }
+        case 1:
+        {
+          $("#slider-2").fadeOut(400);
+          $("#slider-3").fadeOut(400);
+          $("#slider-4").fadeOut(400);
+          $("#slider-1").delay(400).fadeIn(400);
+          $("#sButton2").removeClass("bg-white");
+          $("#sButton1").addClass("bg-white");
+          $("#sButton1").removeClass("bg-gray");
+          $("#sButton2").addClass("bg-gray");
+          $("#sButton3").removeClass("bg-white");
+          $("#sButton3").addClass("bg-gray");
+          $("#sButton4").removeClass("bg-white");
+          $("#sButton4").addClass("bg-gray");
+          cont=0;
+          break;
+        }
+
+      }}
+  }
+  function reinitLoop(time){
+    clearInterval(xx);
+    setTimeout(loopSlider(),time);
+  }
+  function sliderButton1(){
+    $("#slider-2").fadeOut(400);
+    $("#slider-3").fadeOut(400);
+    $("#slider-4").fadeOut(400);
+    $("#slider-1").delay(400).fadeIn(400);
+    $("#sButton2").removeClass("bg-white");
+    $("#sButton1").addClass("bg-white");
+    $("#sButton1").removeClass("bg-gray");
+    $("#sButton2").addClass("bg-gray");
+    $("#sButton3").removeClass("bg-white");
+    $("#sButton3").addClass("bg-gray");
+    $("#sButton4").removeClass("bg-white");
+    $("#sButton4").addClass("bg-gray"); reinitLoop(4000);
+    reinitLoop(4000);
+    cont=0
+  }
+  function sliderButton2(){
+    $("#slider-1").fadeOut(400);
+    $("#slider-3").fadeOut(400);
+    $("#slider-4").fadeOut(400);
+    $("#slider-2").delay(400).fadeIn(400);
+    $("#sButton1").removeClass("bg-white");
+    $("#sButton2").addClass("bg-white");
+    $("#sButton1").addClass("bg-gray");
+    $("#sButton2").removeClass("bg-gray");
+    $("#sButton3").removeClass("bg-white");
+    $("#sButton3").addClass("bg-gray");  reinitLoop(4000);
+    cont=1
+  }
+  function sliderButton3(){
+    $("#slider-1").fadeOut(400);
+    $("#slider-2").fadeOut(400);
+    $("#slider-4").fadeOut(400);
+    $("#slider-3").delay(400).fadeIn(400);
+    $("#sButton1").removeClass("bg-white");
+    $("#sButton2").removeClass("bg-white");
+    $("#sButton1").addClass("bg-gray");
+    $("#sButton2").addClass("bg-gray");
+    $("#sButton3").addClass("bg-white");
+    $("#sButton3").removeClass("bg-gray");
+    reinitLoop(4000);
+    cont=2
+  }
+  function sliderButton4(){
+    $("#slider-1").fadeOut(400);
+    $("#slider-2").fadeOut(400);
+    $("#slider-3").fadeOut(400);
+    $("#slider-4").delay(400).fadeIn(400);
+    $("#sButton1").removeClass("bg-white");
+    $("#sButton2").removeClass("bg-white");
+    $("#sButton1").addClass("bg-gray");
+    $("#sButton2").addClass("bg-gray");
+    $("#sButton3").removeClass("bg-white");
+    $("#sButton3").addClass("bg-gray");
+    $("#sButton4").addClass("bg-white");
+    $("#sButton4").removeClass("bg-gray"); reinitLoop(4000);
+    cont=3
+  }
+  $(window).ready(function(){
+    $("#slider-2").hide();
+    $("#slider-3").hide();
+    $("#slider-4").hide();
+    $("#sButton1").addClass("bg-white");
+    loopSlider();
+  });
+</script>
 </html>
