@@ -59,6 +59,11 @@ module.exports = {
        },
       margin:{
         '85':'22rem',
+        '21':'5.5rem',
+        '18':'4.5rem',
+        '30':'7.5rem',
+        '38':'9.5rem',
+        '25':'6.5rem',
       },
       padding:{
         '30':'7.5rem',
@@ -70,6 +75,8 @@ module.exports = {
       },
       inset:{
         '26':'6.5rem',
+        '94':'31rem',
+        '92':'21rem',
       },
     },
   },
