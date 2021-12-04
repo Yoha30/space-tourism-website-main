@@ -55,19 +55,40 @@ document.querySelector('[data-foo="3"]').addEventListener('mouseout', function (
     document.querySelector('#titan-line').classList.add('hidden');
     document.querySelector('[data-foo="3"]').classList.remove('text-gray-400');
 });
- function marsMenu () {
-    document.getElementById('mars-section').classList.remove('hidden');
-    document.getElementById('moon-section').classList.add('hidden');
-    document.getElementById('europa-section').classList.add('hidden');
-     document.getElementById('titan-section').classList.add('hidden');
+var testresponse;
+function loadXMLDoc(planet, li) {
+    var xmlhttp = new XMLHttpRequest();
+
+    xmlhttp.onreadystatechange = function() {
+        if (xmlhttp.readyState == XMLHttpRequest.DONE) {   // XMLHttpRequest.DONE == 4
+           if (xmlhttp.status == 200) {
+               document.querySelectorAll('.planets-title').forEach(function (m){
+                  m.classList.remove('text-white');
+               });
+               li.classList.add('text-white');
+                plantsMenu(JSON.parse(xmlhttp.responseText));
+           }
+           else if (xmlhttp.status == 400) {
+              alert('There was an error 400');
+           }
+           else {
+               alert('something else other than 200 was returned');
+           }
+        }
+    };
+
+    xmlhttp.open("GET", "/space-tourism-website-main/starter-code/"+ planet + ".json", true);
+    xmlhttp.send();
+}
+loadXMLDoc('moon', document.getElementById('home'));
+ function plantsMenu(response) {
+    document.getElementById('planet').innerHTML= response.planet;
+    document.getElementById('planet-description').innerHTML= response.description;
+    document.getElementById('planet-distance').innerHTML= response.distance;
+    document.getElementById('planet-time').innerHTML= response.time;
+    document.getElementById('planet-image').src = response.image;
  }
- function moonMenu() {
-    document.getElementById('moon-section').classList.remove('hidden');
-    document.getElementById('mars-section').classList.add('hidden');
-    document.getElementById('europa-section').classList.add('hidden');
-     document.getElementById('titan-section').classList.add('hidden');
- }
-document.querySelector('#moon').addEventListener('mouseover', function () {
+/*document.querySelector('#moon').addEventListener('mouseover', function () {
     document.querySelector('[data-foo="4"]').classList.remove('hidden');
     document.querySelector('#moon').classList.add('text-gray-400');
 });
@@ -90,8 +111,9 @@ document.querySelector('#titan').addEventListener('mouseover', function () {
 document.querySelector('#titan').addEventListener('mouseout', function () {
     document.querySelector('[data-foo="7"]').classList.add('hidden');
     document.querySelector('#titan').classList.remove('text-gray-400');
-});
+});*/
 
+/*
  function europaMenu() {
     document.getElementById('europa-section').classList.remove('hidden');
     document.getElementById('moon-section').classList.add('hidden');
@@ -151,4 +173,4 @@ document.querySelector('#europa-titan-section').addEventListener('mouseover', fu
 document.querySelector('#europa-titan-section').addEventListener('mouseout', function () {
     document.querySelector('[data-foo="14"]').classList.add('hidden');
     document.querySelector('#europa-titan-section').classList.remove('text-gray-400');
-});
+});*/
