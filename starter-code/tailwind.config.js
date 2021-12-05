@@ -17,9 +17,11 @@ module.exports = {
         'crew':"url('assets/crew/background-crew-desktop.jpg')",
         'crew-sm':"url('assets/crew/background-crew-mobile.jpg')",
         'crew-md':"url('assets/crew/background-crew-tablet.jpg')",
+        'tech':"url('assets/technology/background-technology-desktop.jpg')",
       },
       textColor:{
         'baby-blue':'#D0D6F9',
+        'dark-blue':'#0B0E17',
       },
       width:{
         '98':'32rem',
@@ -68,7 +70,8 @@ module.exports = {
         '30':'7.5rem',
         '38':'9.5rem',
         '25':'6.5rem',
-      },
+        '17':'5.25rem',
+},
       padding:{
         '30':'7.5rem',
         '18':'4.5rem',

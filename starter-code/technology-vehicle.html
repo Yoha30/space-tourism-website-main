@@ -5,28 +5,241 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
-  
+  <link rel="stylesheet" href="tech.css">
   <title>Frontend Mentor | Space tourism website</title>
 </head>
-<body>
+<body  class=" sm-dt:bg-tech bg-cover  bg-no-repeat text-white text-xl">
+<div  class="p-8 ipro:p-12 sm-dt:p-8 dt:p-16">
+ <nav class=" flex justify-between flex-row place-items-center">
+  <div>
+    <a href="#">
+      <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48">
+        <g fill="none" fill-rule="evenodd">
+          <circle cx="24" cy="24" r="24" fill="#FFF"/>
+          <path fill="#0B0D17"
+                d="M24 0c0 16-8 24-24 24 15.718.114 23.718 8.114 24 24 0-16 8-24 24-24-16 0-24-8-24-24z"/>
+        </g>
+      </svg>
+    </a>
+  </div>
+  <hr class=" w-96 lg:w-52 sm-dt:w-96 md-dt:w-[34rem] lg-dt:w-96 xl-dt:w-100 dt:w-[40rem] hidden ipro:block left-48 lg:left-32 md-dt:left-44 lg-dt:left-32 xl-dt:left-40 dt:left-52  sm-dt:top-16 md-dt:top-[5.5rem] lg-dt:top-14 dt:top-[5.5rem]  z-20 opacity-20 absolute">
+  <div class="block md:hidden cursor-pointer" id="menu-icon">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="21">
+      <g fill="#D0D6F9" fill-rule="evenodd">
+        <path d="M0 0h24v3H0zM0 9h24v3H0zM0 18h24v3H0z"/>
+      </g>
+    </svg>
+  </div>
+  <div class=" z-10 ipro:z-0 backdrop-blur-3xl bg-transparent sm:bg-dark-blue lg:bg-transparent hidden md:block fixed ipad:absolute right-0 top-0 md:top-4 ipro:top-6 sm-dt:top-1 dt:top-10	h-full md:h-[5.5rem] xl:h-24 w-72 md:w-[32rem] ipro:w-[42rem] sm-dt:w-[46rem] lg-dt:w-[65rem] dt:w-[70rem] "
+       id="open-menu">
+    <ul class=" mt-28 ml-10  flex-col md:flex-row hidden  place-content-start sm:place-items-center tracking-widest z-10 pr-0 sm:pr-20"
+        id="menu-list">
+      <li class="cursor-pointer "><a href="index.html"> 00 Home</a>
+        <hr class="w-full relative hidden tab:block top-8">
+      </li>
+      <li class=" py-8 cursor-pointer"><a href="destination-moon.html"> 01 Destination </a>
+        <hr class="w-full relative  hidden tab:block top-8 ">
+      </li>
+      <li class="cursor-pointer "><a href="crew-commander.html">02 Crew</a>
+        <hr class="w-full relative  top-8 hidden">
+      </li>
+      <li class="py-8 cursor-pointer "><a href="technology-vehicle.html"> 03 Technology</a>
+        <hr class="w-full relative hidden  top-8 ">
+      </li>
+    </ul>
+    <div id="close-menu" class="absolute right-8 cursor-pointer top-10 block md:hidden opacity-50">
+      <svg class="" xmlns="http://www.w3.org/2000/svg" width="20" height="21">
+        <g fill="#D0D6F9" fill-rule="evenodd">
+          <path d="M2.575.954l16.97 16.97-2.12 2.122L.455 3.076z"/>
+          <path d="M.454 17.925L17.424.955l2.122 2.12-16.97 16.97z"/>
+        </g>
+      </svg>
+    </div>
+  </div>
 
-  00 Home
-  01 Destination
-  02 Crew
-  03 Technology
+  <ul class=" hidden md:flex flex-col sm:flex-row   place-content-start sm:place-items-center tracking-widest z-10 pr-0 lg-dt:pr-20">
+    <li class="cursor-pointer text-xl md:text-lg lg:text-xl" id="list"><a href="index.html"><p
+            class="font-bold inline-block md:hidden lg:inline-block"> 00</p> Home</a>
+      <hr class="w-full relative hidden left-1 top-8 ipro:top-5 md-dt:top-8" id="line">
+    </li>
+    <li class=" px-8 2xl:px-20 cursor-pointer text-xl md:text-lg xl:text-xl" id="list-4"><a href="destination-moon.html"><p
+            class="font-bold inline-block md:hidden lg:inline-block" >01</p> Destination </a>
+      <hr class="w-full relative  hidden top-8 ipro:top-5 md-dt:top-8 " id="line-4">
+    </li>
+    <li class="cursor-pointer text-xl md:text-lg xl:text-xl" id="list-2"><a href="crew-commander.html"><p
+            class="font-bold inline-block md:hidden lg:inline-block">02</p> Crew</a>
+      <hr class="w-full relative top-8 ipro:top-5 md-dt:top-8  left-1 hidden"  id="line-2">
+    </li>
+    <li class=" px-8 2xl:px-20 cursor-pointer text-xl md:text-lg xl:text-xl" id="list-3"><a
+            href="technology-vehicle.html"><p class="font-bold inline-block md:hidden lg:inline-block"> 03</p>
+      Technology</a>
+      <hr class="w-full relative hidden sm:block top-8 ipro:top-5 md-dt:top-8 " id="line-3">
+    </li>
+  </ul>
+</nav>
+    <h1 class=" mt-0 ipad:mt-8 ipro:mt-0 pl-9 fold:pl-14 ix:pl-16 pixel:pl-16 duo:pl-32 ipad:pl-3 ipro:pl-12 nt-hub:pl-20 dt:pl-36  pt-8 ipro:pt-5 nt-hub:pt-14 sm-widest:pt-8 wide:pt-20 md-dt:pt-6 lg-dt:pt-8 xl-dt:pt-20 dt:pt-24 tracking-widest sm:tracking-large uppercase text-xs ix:text-base pixel:text-lg plus:text-xl ipad:text-sm sm-dt:text-2xl">
+      <p class="tracking-widest font-extrabold inline-block text-gray-500 pr-5"> 03</p> Space launch 101</h1>
+  <div class="flex place-items-center ">
+    <div  class="flex flex-col w-28 ix:w-32 ipad:w-28 ipro:w-80 pb-2 pl-9 fold:pl-14 ix:pl-16 pixel:pl-16 duo:pl-32 ipad:pl-3 ipro:pl-12 nt-hub:pl-20 dt:pl-36  dt:mt-32">
+    <button id="sButton1" onclick="sliderButton1()" class=" rounded-full h-3 ipro:h-20 w-3 sm:w-20 pb-2 text-3xl text-dark-blue border-white border" >1</button>
+    <button id="sButton2" onclick="sliderButton2() " class="bg-transparent rounded-full h-3 ipro:h-20 w-3 sm:w-20 pb-2 my-8 border-white border text-3xl">2</button>
+    <button id="sButton3" onclick="sliderButton3() " class="bg-transparent rounded-full h-3 ipro:h-20 w-3 sm:w-20 pb-2 text-3xl border border-white ">3</button>
+  </div>
+  <div class="sliderAx h-auto ">
+    <div id="slider-1" class="container mx-auto">
+      <div class=" text-white object-fill absolute right-0 ipad:bottom-0 wide:bottom-0 md-dt:bottom-0 dt:bottom-32 my-auto mt-5 fold:mt-5 ix:mt-16 duo:mt-20 ml-16 fold:ml-20 ix:ml-18 pixel:ml-21 plus:ml-[6.5rem] duo:ml-40">
+        <img src="assets/technology/image-launch-vehicle-portrait.jpg" class=" w-32 ix:w-48 duo:w-56 test:w-20 ipad:w-96 ipro:w-60 nt-hub:w-auto sm-dt:w-93 wide:w-97 lg-dt:w-93 dt:w-100 object-cover ">
+      </div>
+      <hr class="w-full block sm:hidden opacity-20">
+        <div class="duo:w-full sm-dt:w-1/2 block duo:flex sm-dt:block flex-col place-items-center sm-dt:ml-21 dt:ml-0 mt-14 fold:mt-12 ix:mt-20 plus:mt-18 ipro:mt-10 nt-hub:mt-24 sm-dt:mt-48 wide:mt-24 md-dt:mt-16 lg-dt:mt-40">
+          <p class=" text-lg plus:text-xl ipad:text-2xl ipro:text-xl ml-14 fold:ml-18 ix:ml-24 pixel:ml-28 plus:ml-30 duo:ml-0 text-baby-blue uppercase">The terminology...</p>
+          <p class=" text-xl ix:text-3xl ipad:text-4xl ipro:text-6xl ml-8 fold:ml-12 ix:ml-7 pixel:ml-12 plus:ml-14 duo:ml-0 text-white uppercase w-auto ix:w-full pixel:w-auto dt:w-98 ipad:mt-3 ipro:mt-5">Launch vehicle</p>
+          <p class="  w-56 fold:w-64 ix:w-80 pixel:w-92 duo:w-auto ipad:w-98 sm-dt:w-97 text-baby-blue text-center sm-dt:text-left text-sm ix:text-base ipro:text-lg my-5 ix:my-5 ipro:my-5">  A launch vehicle or carrier rocket is a rocket-propelled vehicle used to carry a
+  payload from Earth's surface to space, usually to Earth orbit or beyond. Our
+  WEB-X carrier rocket is the most powerful in operation. Standing 150 metres tall,
+  it's quite an awe-inspiring sight on the launch pad!</p>
+        </div>
+      </div> <!-- container -->
+      <br>
 
-  03 Space launch 101
-
-  1
-  2
-  3
-
-  The terminology...
-  Launch vehicle
-
-  A launch vehicle or carrier rocket is a rocket-propelled vehicle used to carry a 
-  payload from Earth's surface to space, usually to Earth orbit or beyond. Our 
-  WEB-X carrier rocket is the most powerful in operation. Standing 150 metres tall, 
-  it's quite an awe-inspiring sight on the launch pad!
+  </div>
+            <div id="slider-2" class="container mx-auto">
+      <div class=" text-white object-fill absolute right-0 ipad:bottom-0 wide:bottom-0 md-dt:bottom-0 dt:bottom-32 my-auto mt-5 fold:mt-5 ix:mt-16 duo:mt-20 ml-16 fold:ml-20 ix:ml-18 pixel:ml-21 plus:ml-[6.5rem] duo:ml-40">
+        <img src="assets/technology/image-spaceport-portrait.jpg" class=" w-32 ix:w-48 duo:w-56 test:w-20 ipad:w-96 ipro:w-60 nt-hub:w-auto sm-dt:w-93 wide:w-97 lg-dt:w-93 dt:w-100 object-cover ">
+      </div>
+      <hr class="w-full block sm:hidden opacity-20">
+        <div class="duo:w-full sm-dt:w-1/2 block duo:flex sm-dt:block flex-col place-items-center sm-dt:ml-21 dt:ml-5 mt-14 fold:mt-12 ix:mt-20 plus:mt-18 ipro:mt-10 nt-hub:mt-24 sm-dt:mt-48 wide:mt-24 md-dt:mt-16 lg-dt:mt-40 dt:mb-20">
+          <p class=" text-lg plus:text-xl ipad:text-2xl ipro:text-xl ml-14 fold:ml-18 ix:ml-24 pixel:ml-28 plus:ml-30 duo:ml-0 text-baby-blue uppercase">The terminology...</p>
+          <p class=" text-xl ix:text-3xl ipad:text-4xl ipro:text-6xl ml-8 fold:ml-12 ix:ml-7 pixel:ml-12 plus:ml-14 duo:ml-0 text-white uppercase w-auto ix:w-full pixel:w-auto dt:w-98 ipad:mt-3 ipro:mt-5 tracking-widest">Spaceport</p>
+          <p class="  w-56 fold:w-64 ix:w-80 pixel:w-92 duo:w-auto ipad:w-98 sm-dt:w-97 text-baby-blue text-center sm-dt:text-left text-sm ix:text-base ipro:text-lg my-5 ix:my-5 ipro:my-5 ">  A spaceport or cosmodrome is a site for launching (or receiving) spacecraft,
+  by analogy to the seaport for ships or airport for aircraft. Based in the
+  famous Cape Canaveral, our spaceport is ideally situated to take advantage
+  of the Earth’s rotation for launch.</p>
+        </div>
+      </div>
+</div>
+  </div>
 </body>
+<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+<script>
+  var cont=0;
+  function loopSlider(){
+    var xx= function(){
+      switch(cont)
+      {
+        case 2:{
+          $("#slider-1").fadeOut(400);
+          $("#slider-2").fadeOut(400);
+          $("#slider-4").fadeOut(400);
+          $("#slider-3").delay(400).fadeIn(400);
+          $("#sButton2").removeClass("bg-white");
+          $("#sButton1").addClass("bg-transparent");
+          $("#sButton1").removeClass("bg-white");
+          $("#sButton2").addClass("bg-transparent");
+          $("#sButton3").addClass("bg-white");
+          $("#sButton3").addClass("text-dark-blue");
+          $("#sButton3").removeClass("bg-transparent");
+          cont=2;
+          break;
+        }
+        case 0:{
+          $("#slider-1").fadeOut(400);
+          $("#slider-3").fadeOut(400);
+          $("#slider-4").fadeOut(400);
+          $("#slider-2").delay(400).fadeIn(400);
+          $("#sButton1").removeClass("bg-white");
+          $("#sButton2").addClass("bg-white");
+          $("#sButton2").addClass("text-dark-blue");
+          $("#sButton1").addClass("bg-transparent");
+          $("#sButton2").removeClass("bg-transparent");
+          $("#sButton3").removeClass("bg-white");
+          $("#sButton3").addClass("bg-transparent");
+          cont=1;
+
+          break;
+        }
+        case 1:
+        {
+          $("#slider-2").fadeOut(400);
+          $("#slider-3").fadeOut(400);
+          $("#slider-4").fadeOut(400);
+          $("#slider-1").delay(400).fadeIn(400);
+          $("#sButton2").removeClass("bg-white");
+          $("#sButton1").addClass("bg-white");
+          $("#sButton1").addClass("text-dark-blue");
+          $("#sButton1").removeClass("bg-transparent");
+          $("#sButton2").addClass("bg-bg-transparent");
+          $("#sButton3").removeClass("bg-white");
+          $("#sButton3").addClass("bg-transparent");
+          cont=0;
+          break;
+        }
+
+      }}
+  }
+  function reinitLoop(time){
+    clearInterval(xx);
+    setTimeout(loopSlider(),time);
+  }
+  function sliderButton1(){
+    $("#slider-2").fadeOut(400);
+    $("#slider-3").fadeOut(400);
+    $("#slider-4").fadeOut(400);
+    $("#slider-1").delay(400).fadeIn(400);
+    $("#sButton2").removeClass("bg-white");
+    $("#sButton2").removeClass("text-dark-blue");
+    $("#sButton1").addClass("bg-white");
+    $("#sButton1").addClass("text-dark-blue");
+    $("#sButton1").removeClass("bg-transparent");
+    $("#sButton2").addClass("bg-transparent");
+    $("#sButton3").removeClass("bg-white");
+    $("#sButton3").removeClass("text-dark-blue");
+    $("#sButton3").addClass("bg-transparent");
+    reinitLoop(4000);
+    reinitLoop(4000);
+    cont=0
+  }
+  function sliderButton2(){
+    $("#slider-1").fadeOut(400);
+    $("#slider-3").fadeOut(400);
+    $("#slider-4").fadeOut(400);
+    $("#slider-2").delay(400).fadeIn(400);
+    $("#sButton1").removeClass("bg-white");
+    $("#sButton1").removeClass("text-dark-blue");
+    $("#sButton2").addClass("bg-white");
+    $("#sButton2").addClass("text-dark-blue");
+    $("#sButton1").addClass("bg-transparent");
+    $("#sButton2").removeClass("bg-transparent");
+    $("#sButton3").removeClass("bg-white");
+    $("#sButton3").removeClass("text-dark-blue");
+    $("#sButton3").addClass("bg-transparent");
+    reinitLoop(4000);
+    cont=1
+  }
+  function sliderButton3(){
+    $("#slider-1").fadeOut(400);
+    $("#slider-2").fadeOut(400);
+    $("#slider-4").fadeOut(400);
+    $("#slider-3").delay(400).fadeIn(400);
+    $("#sButton1").removeClass("bg-white");
+    $("#sButton2").removeClass("bg-white");
+    $("#sButton1").removeClass("text-dark-blue");
+    $("#sButton2").removeClass("text-dark-blue");
+    $("#sButton1").addClass("bg-transparent");
+    $("#sButton2").addClass("bg-transparent");
+    $("#sButton3").addClass("bg-white");
+    $("#sButton3").addClass("text-dark-blue");
+    $("#sButton3").removeClass("bg-transparent");
+    reinitLoop(4000);
+    cont=2
+  }
+  $(window).ready(function(){
+    $("#slider-2").hide();
+    $("#slider-3").hide();
+    $("#slider-4").hide();
+    $("#sButton1").addClass("bg-white");
+    loopSlider();
+  });
+</script>
+<script src="script.js"></script>
 </html>
