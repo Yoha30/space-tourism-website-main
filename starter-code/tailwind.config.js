@@ -52,8 +52,10 @@ module.exports = {
         'duo':'481px',
         'ipad':'750px',
         'ipro':'991px',
-        'sm-dt':'1200px', /*small desktop screen*/
-        'wide':'1355px',
+        'nt-hub':'1024px', /*ipad pro*/
+        'test':' 1024vw 600vh',
+        'sm-dt':'1280px', /*small desktop screen*/
+        'wide':'1300px',
         'md-dt':'1400px',
         'lg-dt':'1500px',
         'xl-dt':'1700px',
@@ -78,13 +80,18 @@ module.exports = {
       inset:{
         '26':'6.5rem',
         '94':'31rem',
+        '86':'26rem',
         '91':'29.5rem',
         '95':'33rem',
         '98':'35rem',
+        '83':'38rem',
+        '84':'40rem',
         '92':'21rem',
         '58':'13.5rem',
         '97':'28rem',
+        '99':'43rem',
         '100':'47rem',
+        '101':'50rem',
       },
     },
   },
