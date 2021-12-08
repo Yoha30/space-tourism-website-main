@@ -23,10 +23,15 @@
         margin: 0;
         position: static;
         margin-left: 2rem;
+        margin-top: 25rem;
+    }
+    .tech-img{
+        height: 20rem;
     }
     .d-text-left{
         text-align: left !important;
     }
+
 }
 @media (min-width: 420px) and (max-width: 450px){
     #slider-button{
