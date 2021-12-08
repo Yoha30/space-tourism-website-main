@@ -6,10 +6,11 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
   <link rel="stylesheet" href="tech.css">
-  <title>Frontend Mentor | Space tourism website</title>
+    <link rel="stylesheet" href="tailwind.css">
+  <title> Space tourism website</title>
 </head>
-<body  class=" sm-dt:bg-tech bg-cover  bg-no-repeat text-white text-xl">
-<div  class="p-8 ipro:p-12 sm-dt:p-8 dt:p-16">
+<body  class=" bg-tech-sm ipad:bg-tech-md sm-dt:bg-tech bg-cover  bg-no-repeat text-white text-xl">
+<div  class=" p-4 ix:p-8 ipro:p-12 sm-dt:p-8 dt:p-16">
  <nav class=" flex justify-between flex-row place-items-center">
   <div>
     <a href="#">
@@ -77,47 +78,62 @@
     </li>
   </ul>
 </nav>
-    <h1 class=" mt-0 ipad:mt-8 ipro:mt-0 pl-9 fold:pl-14 ix:pl-16 pixel:pl-16 duo:pl-32 ipad:pl-3 ipro:pl-12 nt-hub:pl-20 dt:pl-36  pt-8 ipro:pt-5 nt-hub:pt-14 sm-widest:pt-8 wide:pt-20 md-dt:pt-6 lg-dt:pt-8 xl-dt:pt-20 dt:pt-24 tracking-widest sm:tracking-large uppercase text-xs ix:text-base pixel:text-lg plus:text-xl ipad:text-sm sm-dt:text-2xl">
+    <h1 class=" mt-0 ipad:mt-8 ipro:mt-0 pl-11 fold:pl-16 ix:pl-14 duo:pl-32 ipad:pl-3 ipro:pl-12 nt-hub:pl-20 dt:pl-36  pt-4 fold:pt-4 ix:pt-8 ipro:pt-5 nt-hub:pt-14 sm-widest:pt-8 wide:pt-20 md-dt:pt-12 lg-dt:pt-8 xl-dt:pt-20 dt:pt-24 tracking-widest sm:tracking-large uppercase text-xs ix:text-base pixel:text-lg plus:text-xl ipad:text-sm sm-dt:text-2xl">
       <p class="tracking-widest font-extrabold inline-block text-gray-500 pr-5"> 03</p> Space launch 101</h1>
-  <div class="flex place-items-center ">
-    <div  class="flex flex-col w-28 ix:w-32 ipad:w-28 ipro:w-80 pb-2 pl-9 fold:pl-14 ix:pl-16 pixel:pl-16 duo:pl-32 ipad:pl-3 ipro:pl-12 nt-hub:pl-20 dt:pl-36  dt:mt-32">
-    <button id="sButton1" onclick="sliderButton1()" class=" rounded-full h-3 ipro:h-20 w-3 sm:w-20 pb-2 text-3xl text-dark-blue border-white border" >1</button>
-    <button id="sButton2" onclick="sliderButton2() " class="bg-transparent rounded-full h-3 ipro:h-20 w-3 sm:w-20 pb-2 my-8 border-white border text-3xl">2</button>
-    <button id="sButton3" onclick="sliderButton3() " class="bg-transparent rounded-full h-3 ipro:h-20 w-3 sm:w-20 pb-2 text-3xl border border-white ">3</button>
+  <div class="flex flex-col sm-dt:flex-row place-items-center d-flex-row">
+    <div id="slider-button"  class="flex flex-row sm-dt:flex-col  w-56 fold:w-72 ix:w-80 duo:w-96 ipad:w-60 ipro:w-93 sm-dt:w-40 dt:w-80 pb-2 pl-5 fold:pl-14 ix:pl-12 pixel:pl-12 duo:pl-20 ipad:pl-0 ipro:pl-12 nt-hub:pl-16 dt:pl-36 mt-40 fold:mt-44 ix:mt-56 plus:mt-60 duo:mt-72 ipad:mt-96 ipro:mt-94 sm-dt:mt-16 md-dt:mt-20 dt:mt-24">
+    <button id="sButton1" onclick="sliderButton1()" class=" border-opacity-30 rounded-full h-10 ix:h-14 ipro:h-20 w-10 ix:w-14 ipro:w-20 pb-2 text-3xl text-dark-blue border-white border" >1</button>
+    <button id="sButton2" onclick="sliderButton2() " class=" border-opacity-30 bg-transparent rounded-full h-10 ix:h-14 ipro:h-20 w-10 ix:w-14 ipro:w-20 pb-2 my-0 sm-dt:my-8 mx-8 sm-dt:mx-0 border-white border text-3xl">2</button>
+    <button id="sButton3" onclick="sliderButton3() " class=" border-opacity-30 bg-transparent rounded-full h-10 ix:h-14 ipro:h-20 w-10 ix:w-14 ipro:w-20 pb-2 text-3xl border border-white ">3</button>
   </div>
-  <div class="sliderAx h-auto ">
+  <div class="sliderAx h-auto flex">
     <div id="slider-1" class="container mx-auto">
-      <div class=" text-white object-fill absolute right-0 ipad:bottom-0 wide:bottom-0 md-dt:bottom-0 dt:bottom-32 my-auto mt-5 fold:mt-5 ix:mt-16 duo:mt-20 ml-16 fold:ml-20 ix:ml-18 pixel:ml-21 plus:ml-[6.5rem] duo:ml-40">
-        <img src="assets/technology/image-launch-vehicle-portrait.jpg" class=" w-32 ix:w-48 duo:w-56 test:w-20 ipad:w-96 ipro:w-60 nt-hub:w-auto sm-dt:w-93 wide:w-97 lg-dt:w-93 dt:w-100 object-cover ">
-      </div>
-      <hr class="w-full block sm:hidden opacity-20">
-        <div class="duo:w-full sm-dt:w-1/2 block duo:flex sm-dt:block flex-col place-items-center sm-dt:ml-21 dt:ml-0 mt-14 fold:mt-12 ix:mt-20 plus:mt-18 ipro:mt-10 nt-hub:mt-24 sm-dt:mt-48 wide:mt-24 md-dt:mt-16 lg-dt:mt-40">
-          <p class=" text-lg plus:text-xl ipad:text-2xl ipro:text-xl ml-14 fold:ml-18 ix:ml-24 pixel:ml-28 plus:ml-30 duo:ml-0 text-baby-blue uppercase">The terminology...</p>
-          <p class=" text-xl ix:text-3xl ipad:text-4xl ipro:text-6xl ml-8 fold:ml-12 ix:ml-7 pixel:ml-12 plus:ml-14 duo:ml-0 text-white uppercase w-auto ix:w-full pixel:w-auto dt:w-98 ipad:mt-3 ipro:mt-5">Launch vehicle</p>
-          <p class="  w-56 fold:w-64 ix:w-80 pixel:w-92 duo:w-auto ipad:w-98 sm-dt:w-97 text-baby-blue text-center sm-dt:text-left text-sm ix:text-base ipro:text-lg my-5 ix:my-5 ipro:my-5">  A launch vehicle or carrier rocket is a rocket-propelled vehicle used to carry a
+      <div class=" text-white w-full  my-auto pixel:ml-21 plus:ml-[6.5rem] duo:ml-40">
+        <img src="assets/technology/image-launch-vehicle-portrait.jpg" class=" absolute  right-0  sm-dt:w-93 wide:w-97 lg-dt:w-98 dt:w-100 object-cover hidden sm-dt:block sm-dt:top-60 md-dt:top-52 lg-dt:top-52 xl-dt:top-60 dt:top-75">
+             <img src="assets/technology/image-launch-vehicle-landscape.jpg" class=" top-[7.3rem] ix:top-44 ipad:top-52 w-full object-cover block sm-dt:hidden absolute right-0">
+ </div>
+        <div class=" tech-info duo:w-full sm-dt:w-1/2 block duo:flex sm-dt:block flex-col place-items-center ipro:ml-4 sm-dt:ml-21 dt:ml-0 mt-5 fold:mt-5 ix:mt-5 plus:mt-5 ipad:mt-10 ipro:mt-10 nt-hub:mt-10 sm-dt:mt-36 wide:mt-20 md-dt:mt-40 lg-dt:mt-44">
+          <p class=" text-sm ix:text-lg  ipad:text-xl ipro:text-2xl ml-12 fold:ml-20 ix:ml-21 pixel:ml-24 plus:ml-24 duo:ml-0 text-baby-blue uppercase">The terminology...</p>
+          <p class=" text-2xl ix:text-3xl  plus:text-4xl ipad:text-5xl ipro:text-6xl mt-2 ml-4 fold:ml-12 ix:ml-12 pixel:ml-16 plus:ml-10 duo:ml-0 text-white uppercase w-auto ix:w-auto pixel:w-auto sm-dt:w-98 ipad:mt-3 ipro:mt-5">Launch vehicle</p>
+          <p class="   w-56 fold:w-72 ix:w-80 pixel:w-92 duo:w-auto ipad:w-97 ipro:w-98 sm-dt:w-97 text-baby-blue text-center sm-dt:text-left text-sm ix:text-base ipro:text-lg my-5 ix:my-5 ipro:my-10">  A launch vehicle or carrier rocket is a rocket-propelled vehicle used to carry a
   payload from Earth's surface to space, usually to Earth orbit or beyond. Our
   WEB-X carrier rocket is the most powerful in operation. Standing 150 metres tall,
   it's quite an awe-inspiring sight on the launch pad!</p>
         </div>
       </div> <!-- container -->
       <br>
-
-  </div>
-            <div id="slider-2" class="container mx-auto">
-      <div class=" text-white object-fill absolute right-0 ipad:bottom-0 wide:bottom-0 md-dt:bottom-0 dt:bottom-32 my-auto mt-5 fold:mt-5 ix:mt-16 duo:mt-20 ml-16 fold:ml-20 ix:ml-18 pixel:ml-21 plus:ml-[6.5rem] duo:ml-40">
-        <img src="assets/technology/image-spaceport-portrait.jpg" class=" w-32 ix:w-48 duo:w-56 test:w-20 ipad:w-96 ipro:w-60 nt-hub:w-auto sm-dt:w-93 wide:w-97 lg-dt:w-93 dt:w-100 object-cover ">
-      </div>
-      <hr class="w-full block sm:hidden opacity-20">
-        <div class="duo:w-full sm-dt:w-1/2 block duo:flex sm-dt:block flex-col place-items-center sm-dt:ml-21 dt:ml-5 mt-14 fold:mt-12 ix:mt-20 plus:mt-18 ipro:mt-10 nt-hub:mt-24 sm-dt:mt-48 wide:mt-24 md-dt:mt-16 lg-dt:mt-40 dt:mb-20">
-          <p class=" text-lg plus:text-xl ipad:text-2xl ipro:text-xl ml-14 fold:ml-18 ix:ml-24 pixel:ml-28 plus:ml-30 duo:ml-0 text-baby-blue uppercase">The terminology...</p>
-          <p class=" text-xl ix:text-3xl ipad:text-4xl ipro:text-6xl ml-8 fold:ml-12 ix:ml-7 pixel:ml-12 plus:ml-14 duo:ml-0 text-white uppercase w-auto ix:w-full pixel:w-auto dt:w-98 ipad:mt-3 ipro:mt-5 tracking-widest">Spaceport</p>
-          <p class="  w-56 fold:w-64 ix:w-80 pixel:w-92 duo:w-auto ipad:w-98 sm-dt:w-97 text-baby-blue text-center sm-dt:text-left text-sm ix:text-base ipro:text-lg my-5 ix:my-5 ipro:my-5 ">  A spaceport or cosmodrome is a site for launching (or receiving) spacecraft,
+    <div id="slider-2" class="container mx-auto">
+      <div class=" text-white w-full  my-auto pixel:ml-21 plus:ml-[6.5rem] duo:ml-40">
+        <img src="assets/technology/image-spaceport-portrait.jpg" class=" absolute  right-0  sm-dt:w-93 wide:w-97 lg-dt:w-98 dt:w-100 object-cover hidden sm-dt:block sm-dt:top-60 md-dt:top-52 lg-dt:top-52 xl-dt:top-60 dt:top-75">
+             <img src="assets/technology/image-spaceport-landscape.jpg" class=" top-[7.3rem] ix:top-44 ipad:top-52 w-full object-cover block sm-dt:hidden absolute right-0">
+ </div>
+        <div class=" tech-info duo:w-full sm-dt:w-1/2 block duo:flex sm-dt:block flex-col place-items-center ipro:ml-4 sm-dt:ml-21 dt:ml-0 mt-5 fold:mt-5 ix:mt-5 plus:mt-5 ipad:mt-10 ipro:mt-10 nt-hub:mt-10 sm-dt:mt-36 wide:mt-20 md-dt:mt-40 lg-dt:mt-44">
+          <p class=" text-sm ix:text-lg  ipad:text-xl ipro:text-2xl ml-12 fold:ml-20 ix:ml-21 pixel:ml-24 plus:ml-24 duo:ml-0 text-baby-blue uppercase">The terminology...</p>
+          <p class=" text-2xl ix:text-5xl  plus:text-4xl ipad:text-5xl ipro:text-6xl mt-2 ml-4 fold:ml-12 ix:ml-10 pixel:ml-16 plus:ml-10 duo:ml-0 text-white uppercase w-auto ix:w-auto pixel:w-auto sm-dt:w-98 ipad:mt-3 ipro:mt-5">Spaceport</p>
+          <p class="   w-56 fold:w-72 ix:w-80 pixel:w-92 duo:w-auto ipad:w-97 ipro:w-98 sm-dt:w-97 text-baby-blue text-center sm-dt:text-left text-sm ix:text-base ipro:text-lg my-5 ix:my-5 ipro:my-10">A spaceport or cosmodrome is a site for launching (or receiving) spacecraft,
   by analogy to the seaport for ships or airport for aircraft. Based in the
   famous Cape Canaveral, our spaceport is ideally situated to take advantage
   of the Earth’s rotation for launch.</p>
         </div>
-      </div>
+      </div> <!-- container -->
+      <br>
+     <div id="slider-3" class="container mx-auto">
+      <div class=" text-white w-full  my-auto pixel:ml-21 plus:ml-[6.5rem] duo:ml-40">
+        <img src="assets/technology/image-spaceport-portrait.jpg" class=" absolute  right-0  sm-dt:w-93 wide:w-97 lg-dt:w-98 dt:w-100 object-cover hidden sm-dt:block sm-dt:top-60 md-dt:top-52 lg-dt:top-52 xl-dt:top-60 dt:top-75">
+             <img src="assets/technology/image-spaceport-landscape.jpg" class=" top-[7.3rem] ix:top-44 ipad:top-52 w-full object-cover block sm-dt:hidden absolute right-0">
+ </div>
+        <div class=" tech-info duo:w-full sm-dt:w-1/2 block duo:flex sm-dt:block flex-col place-items-center ipro:ml-4 sm-dt:ml-21 dt:ml-0 mt-5 fold:mt-5 ix:mt-5 plus:mt-5 ipad:mt-10 ipro:mt-10 nt-hub:mt-10 sm-dt:mt-36 wide:mt-20 md-dt:mt-40 lg-dt:mt-44">
+          <p class=" text-sm ix:text-lg  ipad:text-xl ipro:text-2xl ml-12 fold:ml-20 ix:ml-21 pixel:ml-24 plus:ml-24 duo:ml-0 text-baby-blue uppercase">The terminology...</p>
+          <p class=" text-2xl ix:text-4xl  plus:text-4xl ipad:text-5xl ipro:text-6xl mt-2 ml-4 fold:ml-12 ix:ml-10 pixel:ml-16 plus:ml-10 duo:ml-0 text-white uppercase w-auto ix:w-auto pixel:w-auto sm-dt:w-98 ipad:mt-3 ipro:mt-5">Space capsule</p>
+          <p class="   w-56 fold:w-72 ix:w-81 pixel:w-92 duo:w-auto ipad:w-97 ipro:w-98 sm-dt:w-97 text-baby-blue text-center sm-dt:text-left text-sm ix:text-base ipro:text-lg my-5 ix:my-5 ipro:my-10">A space capsule is an often-crewed spacecraft that uses a blunt-body reentry
+  capsule to reenter the Earth's atmosphere without wings. Our capsule is where
+  you'll spend your time during the flight. It includes a space gym, cinema,
+  and plenty of other activities to keep you entertained.</p>
+        </div>
+      </div> <!-- container -->
+      <br>
 </div>
+  </div>
   </div>
 </body>
 <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>

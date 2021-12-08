@@ -18,7 +18,10 @@ module.exports = {
         'crew-sm':"url('assets/crew/background-crew-mobile.jpg')",
         'crew-md':"url('assets/crew/background-crew-tablet.jpg')",
         'tech':"url('assets/technology/background-technology-desktop.jpg')",
-      },
+        'tech-sm':"url('assets/technology/background-technology-mobile.jpg')",
+        'tech-md':"url('assets/technology/background-technology-tablet.jpg')",
+        'test':"url('assets/technology/image-launch-vehicle-landscape.jpg')"
+ },
       textColor:{
         'baby-blue':'#D0D6F9',
         'dark-blue':'#0B0E17',
@@ -55,7 +58,6 @@ module.exports = {
         'ipad':'750px',
         'ipro':'991px',
         'nt-hub':'1024px', /*ipad pro*/
-        'test':' 1024vw 600vh',
         'sm-dt':'1280px', /*small desktop screen*/
         'wide':'1300px',
         'md-dt':'1400px',
@@ -65,12 +67,14 @@ module.exports = {
        },
       margin:{
         '85':'22rem',
+          '84':'21rem',
         '21':'5.5rem',
         '18':'4.5rem',
         '30':'7.5rem',
         '38':'9.5rem',
         '25':'6.5rem',
         '17':'5.25rem',
+          '94':'32rem',
 },
       padding:{
         '30':'7.5rem',
@@ -88,6 +92,7 @@ module.exports = {
         '95':'33rem',
         '98':'35rem',
         '83':'38rem',
+          '93':'23rem',
         '84':'40rem',
         '92':'21rem',
         '58':'13.5rem',
@@ -95,6 +100,8 @@ module.exports = {
         '99':'43rem',
         '100':'47rem',
         '101':'50rem',
+         '44':'11rem',
+          '75':'17rem',
       },
     },
   },
