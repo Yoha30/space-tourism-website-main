@@ -68,6 +68,9 @@ function loadXMLDoc(planet, li) {
                });
                li.classList.add('text-white');
                li.classList.add('border-b-2');
+               li.addEventListener('mouseover', function (){
+                   li.classList.add('text-white');
+               })
                 plantsMenu(JSON.parse(xmlhttp.responseText));
            }
            else if (xmlhttp.status == 400) {
@@ -80,7 +83,9 @@ function loadXMLDoc(planet, li) {
     };
 
     xmlhttp.open("GET", "/space-tourism-website-main/starter-code/"+ planet + ".json", true);
+/*
     xmlhttp.open("GET", "/"+ planet + ".json", true);
+*/
 xmlhttp.send();
 }
 loadXMLDoc('moon', document.getElementById('home'));
