@@ -97,11 +97,6 @@
         margin-top: 5rem !important;
         text-align: center !important;
     }
-    #content{
-        place-items: center !important;
-        height: 55rem !important;
-        margin-top: 10rem !important;
-    }
     .d-text-center {
         text-align: center !important;
         font-size: 25px !important;
@@ -148,5 +143,12 @@
         margin-left: 2rem !important;
         width: 33rem !important;
 
+    }
+}
+@media (min-width: 1024px) and (min-height: 1300px){
+      #content{
+        place-items: center !important;
+        height: 55rem !important;
+        margin-top: 10rem !important;
     }
 }
