@@ -1154,6 +1154,10 @@ video {
     display: inline-block;
   }
 
+  .lg\:h-32 {
+    height: 8rem;
+  }
+
   .lg\:w-52 {
     width: 13rem;
   }
@@ -1665,8 +1669,8 @@ video {
 }
 
 @media (min-width: 991px) {
-  .ipro\:top-6 {
-    top: 1.5rem;
+  .ipro\:top-0 {
+    top: 0px;
   }
 
   .ipro\:top-5 {
@@ -1687,6 +1691,10 @@ video {
 
   .ipro\:left-86 {
     left: 26rem;
+  }
+
+  .ipro\:top-10 {
+    top: 2.5rem;
   }
 
   .ipro\:z-0 {
