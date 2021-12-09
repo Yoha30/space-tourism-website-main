@@ -1078,11 +1078,6 @@ video {
     place-items: center;
   }
 
-  .sm\:bg-dark-blue {
-    --tw-bg-opacity: 1;
-    background-color: rgba(20, 23, 40, var(--tw-bg-opacity));
-  }
-
   .sm\:pr-20 {
     padding-right: 5rem;
   }
@@ -1138,10 +1133,6 @@ video {
 
   .lg\:w-52 {
     width: 13rem;
-  }
-
-  .lg\:bg-transparent {
-    background-color: transparent;
   }
 
   .lg\:text-xl {
@@ -1428,6 +1419,11 @@ video {
     width: 28rem;
   }
 
+  .ipad\:bg-light-gray {
+    --tw-bg-opacity: 1;
+    background-color: rgba(21, 24, 35, var(--tw-bg-opacity));
+  }
+
   .ipad\:bg-tech-md {
     background-image: url('assets/technology/background-technology-tablet.jpg');
   }
@@ -1641,6 +1637,10 @@ video {
 
   .sm-dt\:flex-col {
     flex-direction: column;
+  }
+
+  .sm-dt\:bg-transparent {
+    background-color: transparent;
   }
 
   .sm-dt\:bg-tech {

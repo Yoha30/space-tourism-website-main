@@ -596,8 +596,6 @@ video {
 }
 
 *, ::before, ::after {
-  --tw-border-opacity: 1;
-  border-color: rgba(229, 231, 235, var(--tw-border-opacity));
   --tw-backdrop-blur: var(--tw-empty,/*!*/ /*!*/);
   --tw-backdrop-brightness: var(--tw-empty,/*!*/ /*!*/);
   --tw-backdrop-contrast: var(--tw-empty,/*!*/ /*!*/);
@@ -731,6 +729,10 @@ video {
   display: none;
 }
 
+.h-screen {
+  height: 100vh;
+}
+
 .h-full {
   height: 100%;
 }
@@ -741,10 +743,6 @@ video {
 
 .h-px {
   height: 1px;
-}
-
-.h-screen {
-  height: 100vh;
 }
 
 .w-96 {
@@ -763,28 +761,16 @@ video {
   width: 10rem;
 }
 
+.w-80 {
+  width: 20rem;
+}
+
 .w-52 {
   width: 13rem;
 }
 
 .w-56 {
   width: 14rem;
-}
-
-.w-10 {
-  width: 2.5rem;
-}
-
-.w-20 {
-  width: 5rem;
-}
-
-.w-32 {
-  width: 8rem;
-}
-
-.w-80 {
-  width: 20rem;
 }
 
 .cursor-pointer {
@@ -815,10 +801,6 @@ video {
   justify-content: space-between;
 }
 
-.border-b-2 {
-  border-bottom-width: 2px;
-}
-
 .border-none {
   border-style: none;
 }
@@ -847,11 +829,6 @@ video {
 .px-8 {
   padding-left: 2rem;
   padding-right: 2rem;
-}
-
-.px-3 {
-  padding-left: 0.75rem;
-  padding-right: 0.75rem;
 }
 
 .pr-0 {
@@ -1041,6 +1018,10 @@ video {
     display: inline-block;
   }
 
+  .lg\:h-32 {
+    height: 8rem;
+  }
+
   .lg\:w-52 {
     width: 13rem;
   }
@@ -1052,14 +1033,6 @@ video {
 }
 
 @media (min-width: 1280px) {
-  .xl\:h-20 {
-    height: 5rem;
-  }
-
-  .xl\:h-auto {
-    height: auto;
-  }
-
   .xl\:h-24 {
     height: 6rem;
   }
@@ -1100,11 +1073,6 @@ video {
 
   .fold\:w-\[16\.5rem\] {
     width: 16.5rem;
-  }
-
-  .fold\:px-5 {
-    padding-left: 1.25rem;
-    padding-right: 1.25rem;
   }
 
   .fold\:pl-11 {
@@ -1310,12 +1278,12 @@ video {
 }
 
 @media (min-width: 991px) {
-  .ipro\:top-6 {
-    top: 1.5rem;
+  .ipro\:top-0 {
+    top: 0px;
   }
 
-  .ipro\:top-5 {
-    top: 1.25rem;
+  .ipro\:top-10 {
+    top: 2.5rem;
   }
 
   .ipro\:z-0 {
@@ -1373,6 +1341,11 @@ video {
 
   .ipro\:place-items-start {
     place-items: start;
+  }
+
+  .ipro\:bg-light-gray {
+    --tw-bg-opacity: 1;
+    background-color: rgba(21, 24, 35, var(--tw-bg-opacity));
   }
 
   .ipro\:bg-destination {
@@ -1442,6 +1415,10 @@ video {
 
   .sm-dt\:w-97 {
     width: 28rem;
+  }
+
+  .sm-dt\:bg-transparent {
+    background-color: transparent;
   }
 
   .sm-dt\:p-8 {
@@ -1567,10 +1544,6 @@ video {
     top: 2rem;
   }
 
-  .dt\:top-4 {
-    top: 1rem;
-  }
-
   .dt\:m-0 {
     margin: 0px;
   }
@@ -1630,11 +1603,6 @@ video {
 
   .dt\:p-16 {
     padding: 4rem;
-  }
-
-  .dt\:px-10 {
-    padding-left: 2.5rem;
-    padding-right: 2.5rem;
   }
 
   .dt\:pl-36 {

@@ -1379,14 +1379,6 @@ video {
     top: 0px;
   }
 
-  .ipro\:top-6 {
-    top: 1.5rem;
-  }
-
-  .ipro\:top-8 {
-    top: 2rem;
-  }
-
   .ipro\:top-10 {
     top: 2.5rem;
   }
@@ -1482,6 +1474,10 @@ video {
 
   .sm-dt\:w-\[25rem\] {
     width: 25rem;
+  }
+
+  .sm-dt\:bg-transparent {
+    background-color: transparent;
   }
 
   .sm-dt\:p-16 {
