@@ -945,10 +945,6 @@ video {
   border-radius: 9999px;
 }
 
-.bg-transparent {
-  background-color: transparent;
-}
-
 .bg-gray {
   --tw-bg-opacity: 1;
   background-color: rgba(54, 56, 65, var(--tw-bg-opacity));
@@ -1105,11 +1101,6 @@ video {
     place-items: center;
   }
 
-  .sm\:bg-dark-blue {
-    --tw-bg-opacity: 1;
-    background-color: rgba(20, 23, 40, var(--tw-bg-opacity));
-  }
-
   .sm\:pr-20 {
     padding-right: 5rem;
   }
@@ -1165,10 +1156,6 @@ video {
 
   .lg\:w-52 {
     width: 13rem;
-  }
-
-  .lg\:bg-transparent {
-    background-color: transparent;
   }
 
   .lg\:text-xl {
@@ -1753,6 +1740,11 @@ video {
 
   .ipro\:w-32 {
     width: 8rem;
+  }
+
+  .ipro\:bg-light-gray {
+    --tw-bg-opacity: 1;
+    background-color: rgba(21, 24, 35, var(--tw-bg-opacity));
   }
 
   .ipro\:p-12 {
