@@ -938,6 +938,15 @@ video {
           backdrop-filter: var(--tw-backdrop-filter);
 }
 
+.hover\:border-b-2:hover {
+  border-bottom-width: 2px;
+}
+
+.hover\:text-white:hover {
+  --tw-text-opacity: 1;
+  color: rgba(255, 255, 255, var(--tw-text-opacity));
+}
+
 @media (min-width: 640px) {
   .sm\:mb-8 {
     margin-bottom: 2rem;

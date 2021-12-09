@@ -68,9 +68,6 @@ function loadXMLDoc(planet, li) {
                });
                li.classList.add('text-white');
                li.classList.add('border-b-2');
-               li.addEventListener('mouseover', function (){
-                   li.classList.add('text-white');
-               })
                 plantsMenu(JSON.parse(xmlhttp.responseText));
            }
            else if (xmlhttp.status == 400) {
