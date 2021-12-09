@@ -724,6 +724,10 @@ video {
   display: none;
 }
 
+.h-screen {
+  height: 100vh;
+}
+
 .h-full {
   height: 100%;
 }
@@ -1111,6 +1115,10 @@ video {
     width: 20rem;
   }
 
+  .xl\:bg-home {
+    background-image: url('assets/home/background-home-desktop.jpg');
+  }
+
   .xl\:text-xl {
     font-size: 1.25rem;
     line-height: 1.75rem;
@@ -1410,7 +1418,7 @@ video {
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1280px) {
   .sm-dt\:top-10 {
     top: 2.5rem;
   }
@@ -1454,7 +1462,7 @@ video {
   }
 }
 
-@media (min-width: 1355px) {
+@media (min-width: 1300px) {
   .wide\:h-\[33\.6rem\] {
     height: 33.6rem;
   }

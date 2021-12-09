@@ -67,3 +67,18 @@
            margin-top: 35rem;
     }
 }
+@media (min-width: 1020px) and (max-width: 1024px) and (min-height: 1360px){
+ .d-flex-col{
+    flex-direction: column !important;
+     margin-top: 5rem !important;
+     text-align: center !important;
+ }
+    .d-text-center{
+        text-align: center !important;
+        font-size: 25px !important;
+        width: 35rem !important;
+    }
+    .explore-circle{
+        margin-left: 0 !important;
+    }
+}
