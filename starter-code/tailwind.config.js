@@ -41,6 +41,7 @@ module.exports = {
       backgroundColor:{
         'dark-blue':'#141728',
         'gray':'#363841',
+          'light-gray':'#151823',
       },
       ringWidth:{
         '10':'5rem',

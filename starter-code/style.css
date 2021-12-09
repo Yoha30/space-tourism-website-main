@@ -813,6 +813,11 @@ video {
   background-color: rgba(255, 255, 255, var(--tw-bg-opacity));
 }
 
+.bg-light-gray {
+  --tw-bg-opacity: 1;
+  background-color: rgba(21, 24, 35, var(--tw-bg-opacity));
+}
+
 .bg-home-sm {
   background-image: url('assets/home/background-home-mobile.jpg');
 }
@@ -952,11 +957,6 @@ video {
 }
 
 @media (min-width: 640px) {
-  .sm\:my-12 {
-    margin-top: 3rem;
-    margin-bottom: 3rem;
-  }
-
   .sm\:block {
     display: block;
   }
@@ -973,9 +973,14 @@ video {
     justify-content: space-between;
   }
 
-  .sm\:bg-dark-blue {
+  .sm\:bg-gray {
     --tw-bg-opacity: 1;
-    background-color: rgba(20, 23, 40, var(--tw-bg-opacity));
+    background-color: rgba(54, 56, 65, var(--tw-bg-opacity));
+  }
+
+  .sm\:bg-light-gray {
+    --tw-bg-opacity: 1;
+    background-color: rgba(21, 24, 35, var(--tw-bg-opacity));
   }
 
   .sm\:pr-20 {
@@ -1072,10 +1077,6 @@ video {
     width: 18rem;
   }
 
-  .lg\:bg-transparent {
-    background-color: transparent;
-  }
-
   .lg\:bg-home {
     background-image: url('assets/home/background-home-desktop.jpg');
   }
@@ -1105,6 +1106,10 @@ video {
 
   .xl\:w-80 {
     width: 20rem;
+  }
+
+  .xl\:bg-transparent {
+    background-color: transparent;
   }
 
   .xl\:text-xl {
@@ -1352,6 +1357,11 @@ video {
     place-items: center;
   }
 
+  .ipad\:bg-light-gray {
+    --tw-bg-opacity: 1;
+    background-color: rgba(21, 24, 35, var(--tw-bg-opacity));
+  }
+
   .ipad\:pl-\[3\.2rem\] {
     padding-left: 3.2rem;
   }
@@ -1424,6 +1434,10 @@ video {
     flex-direction: row;
   }
 
+  .ipro\:place-items-end {
+    place-items: end;
+  }
+
   .ipro\:p-12 {
     padding: 3rem;
   }
@@ -1448,6 +1462,11 @@ video {
     top: 2.5rem;
   }
 
+  .sm-dt\:my-12 {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+  }
+
   .sm-dt\:ml-20 {
     margin-left: 5rem;
   }
@@ -1470,10 +1489,6 @@ video {
 
   .sm-dt\:w-\[25rem\] {
     width: 25rem;
-  }
-
-  .sm-dt\:place-items-end {
-    place-items: end;
   }
 
   .sm-dt\:p-16 {
@@ -1549,10 +1564,6 @@ video {
   .xl-dt\:w-\[33rem\] {
     width: 33rem;
   }
-
-  .xl-dt\:place-items-end {
-    place-items: end;
-  }
 }
 
 @media (min-width: 1800px) {
@@ -1564,8 +1575,8 @@ video {
     margin-left: 10rem;
   }
 
-  .dt\:h-\[40rem\] {
-    height: 40rem;
+  .dt\:h-\[44rem\] {
+    height: 44rem;
   }
 
   .dt\:w-\[40rem\] {

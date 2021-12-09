@@ -97,7 +97,11 @@
         margin-top: 5rem !important;
         text-align: center !important;
     }
-
+    #content{
+        place-items: center !important;
+        height: 55rem !important;
+        margin-top: 10rem !important;
+    }
     .d-text-center {
         text-align: center !important;
         font-size: 25px !important;
