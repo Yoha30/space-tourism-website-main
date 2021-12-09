@@ -15,7 +15,7 @@
         }
     </style>
 </head>
-<body class="bg-destination-sm duo:bg-destination-md ipro:bg-destination bg-no-repeat bg-cover	h-screen text-white text-xl">
+<body class="bg-destination-sm duo:bg-destination-md ipro:bg-destination bg-no-repeat bg-cover	 text-white text-xl">
 <div  class=" p-4 ix:p-8 ipro:p-12 sm-dt:p-8 dt:p-16">
  <nav class=" flex justify-between flex-row place-items-center">
   <div>
@@ -89,29 +89,29 @@
             <p class="tracking-widest font-extrabold inline-block text-gray-500 pr-3">01</p> Pick
             your destination
         </h1>
-        <div id="moon-content" class="flex flex-col ipro:flex-row place-items-start duo:place-items-center ipro:place-items-start ml-0 ipro:ml-20 wide:ml-28 dt:ml-0 mt-5 duo:mt-5 sm-dt:mt-10 dt:mt-20">
-            <div class="pl-8 fold:pl-14  ix:pl-16 plus:pl-18 duo:pl-8 dt:pl-48 ">
+        <div id="moon-content" class="flex flex-col ipro:flex-row place-items-center duo:place-items-center ipro:place-items-start ml-0 ipro:ml-20 wide:ml-28 dt:ml-0 mt-5 duo:mt-5 sm-dt:mt-10 dt:mt-20">
+            <div class="pl-0 duo:pl-8 dt:pl-48 ">
                 <img id="planet-image" src="" alt="moon"
                      class="  w-40 fold:w-40 ix:w-48 pixel:w-52 plus:w-56 duo:w-72 ipad:w-96 ipro:w-72 sm-dt:w-96 wide:w-95 lg-dt:w-94 dt:w-[32rem] pt-2 ipro:pt-16 dt:pt-8">
             </div>
             <div class="  ml-0 duo:ml-10 ipro:ml-6 wide:ml-16 md-dt:ml-32 lg-dt:ml-16 dt:ml-85 mt-8 duo:mt-10 dt:mt-0 m-0 duo:m-10 dt:m-0">
-                <div id="planets" class="uppercase text-xs ix:text-sm plus:text-lg ipro:text-base ml-3 fold:ml-4 ix:ml-8 plus:ml-5 duo:ml-28 dt:ml-0  text-gray-500 tracking-widest">
-                    <ul class="flex flex-row justify-between w-80">
-                        <li id="home" class="hover:text-white cursor-pointer planets-title" onclick="loadXMLDoc('moon',this);"><a> Moon </a>
+                <div id="planets" class="uppercase text-xs ix:text-sm plus:text-lg ipro:text-base ml-3 fold:ml-4 ix:ml-8 plus:ml-8 duo:ml-28 dt:ml-0  text-gray-500 tracking-widest">
+                    <ul class="flex flex-row justify-between w-52 fold:w-64 plus:w-72 sm-dt:w-80">
+                        <li id="home" class="hover:border-b-2 hover:text-white cursor-pointer planets-title" onclick="loadXMLDoc('moon',this);"><a> Moon </a>
                             <hr class="w-full relative block top-2 h-1 border-none bg-gray-400" id="moon-line">
                         </li>
-                        <li class=" hover:text-white  cursor-pointer planets-title" data-foo="1" id="mars" onclick="loadXMLDoc('mars',this);"> Mars
+                        <li class=" hover:border-b-2 hover:text-white  cursor-pointer planets-title" data-foo="1" id="mars" onclick="loadXMLDoc('mars',this);"> Mars
                             <hr class="w-full relative hidden top-2 h-1 border-none bg-gray-500" id="mars-line">
                         </li>
-                        <li data-foo="2" class=" hover:text-white cursor-pointer europa-menu planets-title" onclick="loadXMLDoc('europa',this);"> Europa
+                        <li data-foo="2" class="hover:border-b-2 hover:text-white cursor-pointer europa-menu planets-title" onclick="loadXMLDoc('europa',this);"> Europa
                             <hr class="w-full relative hidden top-2 h-1 border-none bg-gray-500" id="europa-line">
                         </li>
-                        <li data-foo="3" class=" hover:text-white cursor-pointer planets-title" onclick="loadXMLDoc('titan',this);"> Titan
+                        <li data-foo="3" class="hover:border-b-2 hover:text-white cursor-pointer planets-title" onclick="loadXMLDoc('titan',this);"> Titan
                             <hr class="w-full relative hidden top-2 h-1 border-none bg-gray-500" id="titan-line">
                         </li>
                     </ul>
                 </div>
-                <p id="planet" class=" text-6xl ix:text-6xl duo:text-7xl sm-dt:text-8xl  dt:text-9xl text-white uppercase ml-5 fold:ml-10 ix:ml-16 pixel:ml-[4.5rem] plus:ml-20 duo:ml-[9.5rem] ipro:ml-28 dt:ml-0 my-8 ipro:my-6 dt:my-10">
+                <p id="planet" class=" text-6xl ix:text-6xl duo:text-7xl sm-dt:text-8xl  dt:text-9xl text-white uppercase ml-5 fold:ml-10 ix:ml-16 pixel:ml-[4.5rem] plus:ml-20 duo:ml-[9.5rem] ipro:ml-28 dt:ml-0 my-3 ipro:my-6 dt:my-10">
                     </p>
                 <div>
                     <p id="planet-description" class=" leading-6 sm:leading-9 text-gray-500 w-52 fold:w-56 ix:w-64 plus:w-72 duo:w-[32rem] ipro:w-92 sm-dt:w-97 dt:w-98 mb-5 ipro:mb-8 dt:mb-14 ml-1 fold:ml-5 ix:ml-8 pixel:ml-9 duo:ml-0 ipro:ml-28 dt:ml-0 text-center ipro:text-left text-xs fold:text-sm sm-dt:text-lg dt:text-xl">
