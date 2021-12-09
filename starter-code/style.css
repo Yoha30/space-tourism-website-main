@@ -965,10 +965,6 @@ video {
     flex-direction: row;
   }
 
-  .sm\:place-items-start {
-    place-items: start;
-  }
-
   .sm\:place-items-center {
     place-items: center;
   }
@@ -1031,10 +1027,6 @@ video {
 
   .md\:flex-row {
     flex-direction: row;
-  }
-
-  .md\:place-items-center {
-    place-items: center;
   }
 
   .md\:bg-home-md {
@@ -1113,10 +1105,6 @@ video {
 
   .xl\:w-80 {
     width: 20rem;
-  }
-
-  .xl\:bg-home {
-    background-image: url('assets/home/background-home-desktop.jpg');
   }
 
   .xl\:text-xl {
@@ -1309,10 +1297,6 @@ video {
     display: block;
   }
 
-  .duo\:w-96 {
-    width: 24rem;
-  }
-
   .duo\:w-93 {
     width: 26rem;
   }
@@ -1321,88 +1305,25 @@ video {
     place-items: start;
   }
 
-  .duo\:place-items-center {
-    place-items: center;
-  }
-
-  .duo\:pl-\[3\.2rem\] {
-    padding-left: 3.2rem;
-  }
-
-  .duo\:pt-10 {
-    padding-top: 2.5rem;
-  }
-
-  .duo\:pt-5 {
-    padding-top: 1.25rem;
+  .duo\:pl-24 {
+    padding-left: 6rem;
   }
 
   .duo\:pt-0 {
     padding-top: 0px;
   }
 
-  .duo\:pl-0 {
-    padding-left: 0px;
-  }
-
-  .duo\:pl-2 {
-    padding-left: 0.5rem;
-  }
-
-  .duo\:pl-5 {
-    padding-left: 1.25rem;
-  }
-
-  .duo\:pl-4 {
-    padding-left: 1rem;
-  }
-
-  .duo\:pr-10 {
-    padding-right: 2.5rem;
-  }
-
-  .duo\:pr-20 {
-    padding-right: 5rem;
-  }
-
-  .duo\:pl-24 {
-    padding-left: 6rem;
-  }
-
-  .duo\:pl-\[4\.5re\2c \] {
-    padding-left: 4.5re,;
-  }
-
   .duo\:pl-\[4\.5rem\] {
     padding-left: 4.5rem;
-  }
-
-  .duo\:pl-20 {
-    padding-left: 5rem;
   }
 
   .duo\:pl-8 {
     padding-left: 2rem;
   }
 
-  .duo\:text-xl {
-    font-size: 1.25rem;
-    line-height: 1.75rem;
-  }
-
   .duo\:text-base {
     font-size: 1rem;
     line-height: 1.5rem;
-  }
-
-  .duo\:text-lg {
-    font-size: 1.125rem;
-    line-height: 1.75rem;
-  }
-
-  .duo\:text-9xl {
-    font-size: 8rem;
-    line-height: 1;
   }
 }
 
@@ -1431,20 +1352,20 @@ video {
     place-items: center;
   }
 
-  .ipad\:pl-0 {
-    padding-left: 0px;
-  }
-
-  .ipad\:pt-24 {
-    padding-top: 6rem;
-  }
-
   .ipad\:pl-\[3\.2rem\] {
     padding-left: 3.2rem;
   }
 
+  .ipad\:pl-0 {
+    padding-left: 0px;
+  }
+
   .ipad\:pl-4 {
     padding-left: 1rem;
+  }
+
+  .ipad\:pt-24 {
+    padding-top: 6rem;
   }
 
   .ipad\:text-xl {
@@ -1551,6 +1472,10 @@ video {
     width: 25rem;
   }
 
+  .sm-dt\:place-items-end {
+    place-items: end;
+  }
+
   .sm-dt\:p-16 {
     padding: 4rem;
   }
@@ -1587,6 +1512,10 @@ video {
 
   .md-dt\:w-\[33rem\] {
     width: 33rem;
+  }
+
+  .md-dt\:place-items-end {
+    place-items: end;
   }
 }
 
