@@ -80,9 +80,7 @@ function loadXMLDoc(planet, li) {
     };
 
     xmlhttp.open("GET", "/space-tourism-website-main/starter-code/"+ planet + ".json", true);
-/*
     xmlhttp.open("GET", "/"+ planet + ".json", true);
-*/
 xmlhttp.send();
 }
 loadXMLDoc('moon', document.getElementById('home'));
