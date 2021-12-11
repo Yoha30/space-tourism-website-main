@@ -92,10 +92,10 @@ loadXMLDoc('moon', document.getElementById('home'));
     document.getElementById('planet-image').src = response.image;
  }
  function loadingContent() {
-     if (document.getElementById('planet-image').onload =! true){
-         document.getElementById('loading').classList.remove('hidden');
-     }else{
+     if (document.getElementById('planet-image').onload === true){
          document.getElementById('loading').classList.add('hidden');
+     }else{
+         document.getElementById('loading').classList.remove('hidden');
      }
  }
  loadingContent();
