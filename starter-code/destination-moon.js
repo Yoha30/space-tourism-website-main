@@ -91,3 +91,11 @@ loadXMLDoc('moon', document.getElementById('home'));
     document.getElementById('planet-time').innerHTML= response.time;
     document.getElementById('planet-image').src = response.image;
  }
+ function loadingContent() {
+     if (document.getElementById('planet-image').onload === true){
+         document.getElementById('loading').classList.remove('hidden');
+     }else{
+         document.getElementById('loading').classList.add('hidden');
+     }
+ }
+ loadingContent();

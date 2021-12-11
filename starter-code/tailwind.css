@@ -155,3 +155,6 @@
         width: 26rem;
     }
 }
+.active{
+    border-bottom:2px ;
+}
