@@ -93,9 +93,9 @@ loadXMLDoc('moon', document.getElementById('home'));
  }
  function loadingContent() {
      if (document.getElementById('planet-image').onload === true){
-         document.getElementById('loading').classList.add('hidden');
-     }else{
          document.getElementById('loading').classList.remove('hidden');
+     }else{
+         document.getElementById('loading').classList.add('hidden');
      }
  }
  loadingContent();
