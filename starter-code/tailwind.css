@@ -155,6 +155,12 @@
         width: 26rem;
     }
 }
+#planets li:hover{
+    border-bottom:2px solid white;
+    margin: 0;
+    height: 1.7rem;
+}
 .active{
-    border-bottom:2px ;
+    border-bottom: 2px solid white;
+        height: 1.7rem;
 }

@@ -65,10 +65,10 @@ function loadXMLDoc(planet, li) {
             if (xmlhttp.status == 200) {
                 document.querySelectorAll('.planets-title').forEach(function (m) {
                     m.classList.remove('text-white');
-                    m.classList.remove('border-b-2');
+                    m.classList.remove('active');
                 });
                 li.classList.add('text-white');
-                li.classList.add('border-b-2');
+                li.classList.add('active');
                 plantsMenu(JSON.parse(xmlhttp.responseText));
             } else if (xmlhttp.status == 400) {
                 alert('There was an error 400');
@@ -99,7 +99,6 @@ function loadingContent() {
             document.getElementById('moon-content').classList.remove('hidden');
 }
 }
-var body = document.querySelector('body');
 function test() {
     if (loadingContent() != true) {
         document.getElementById('loading').classList.remove('hidden');

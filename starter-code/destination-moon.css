@@ -938,6 +938,10 @@ video {
   border-bottom-width: 2px;
 }
 
+.hover\:border-b:hover {
+  border-bottom-width: 1px;
+}
+
 .hover\:text-white:hover {
   --tw-text-opacity: 1;
   color: rgba(255, 255, 255, var(--tw-text-opacity));
